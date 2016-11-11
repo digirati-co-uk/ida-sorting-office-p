@@ -1,0 +1,45 @@
+﻿@model List<IdaSortingOffice.Models.Roll>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Lists of Microfilm rolls</h2>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Dates</th>
+                    <th>Number</th>
+                    <th>State</th>
+                    <th>PubNo</th>
+                    <th style="width:30%">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var roll in Model)
+                {
+                    <tr class="@(roll.OcrData == null ? "" : "info")">
+                        <td style="white-space:nowrap;">
+                            @if (roll.Id != null)
+                            {
+                                <a href="/sortingoffice.html?manifest=@(Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/" + roll.Id)">@roll.Id</a>
+                            }
+                        </td>
+                        <td>@roll.Title</td>
+                        <td style="white-space:nowrap;">@roll.Dates</td>
+                        <td>@roll.Number</td>
+                        <td>@roll.State</td>
+                        <td>@roll.PubNo</td>
+                        <td>@roll.Notes</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
