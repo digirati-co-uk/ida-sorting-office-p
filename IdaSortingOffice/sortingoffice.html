@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thumb tester</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/typeahead.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="container body-content" id="mainContainer">
         <div class="row first">
-            <div class="col-md-10"></div>
+            <div class="col-md-4">
+                <h1 style="margin-top:0">Sorting Office</h1>
+            </div>
+            <div class="col-md-1">
+                <a href="\">Roll list</a>
+            </div>
+            <div class="col-md-5">
+                <button id="clearSelection" class="btn btn-primary">Clear selection</button>
+                <button id="makeManifest" class="btn btn-primary">Make manifest</button>
+            </div>
             <div class="col-md-2" id="thumbSizeSelector"></div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="script/bootstrap.min.js"></script>
-    <script src="script/typeahead.jquery.js"></script>
     <script src="script/thumbs.js"></script>
 
 </body>

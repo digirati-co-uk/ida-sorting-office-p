@@ -129,7 +129,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RangeData.cs" />
     <Compile Include="Models\Roll.cs" />
+    <Compile Include="Models\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,8 +179,35 @@
     <Content Include="App_Data\rolls.csv" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ocrdata\M-1011_R-09.json" />
+    <Content Include="App_Data\ocrdata\M-1011_R-033.json" />
+    <Content Include="App_Data\ocrdata\M-1011_R-127.json" />
+    <Content Include="App_Data\ocrdata\M-1011_R-144.json" />
+    <Content Include="App_Data\ocrdata\M-1011_R-145.json" />
+    <Content Include="App_Data\ocrdata\M-1011_R-174.json" />
+    <Content Include="App_Data\ocrdata\M-1070_R-03.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-01.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-02.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-03.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-04.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-05.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-06.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-07.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-08.json" />
+    <Content Include="App_Data\ocrdata\M-1304_R-09.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-01.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-02.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-03.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-05.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-06.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-07.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-08.json" />
+    <Content Include="App_Data\ocrdata\T-21_ROLL-09.json" />
+    <Content Include="App_Data\manifest-template.json" />
+    <Content Include="App_Data\ranges\readme.md" />
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -193,7 +222,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>47724</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

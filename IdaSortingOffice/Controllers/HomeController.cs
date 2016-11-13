@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Web;
+using System.Text;
 using System.Web.Mvc;
 using CoreTechs.Common.Text;
 using IdaSortingOffice.Models;
@@ -21,16 +21,141 @@ namespace IdaSortingOffice.Controllers
 
         public ActionResult Roll()
         {
-            var id = Request.Url.AbsolutePath.Substring("roll/".Length + 1);
-            var roll = GetCachedRolls().FirstOrDefault(r => r.Id == id);
-            var manifestJson = GetDlcsRollJson(roll.DlcsManifest);
+            var roll = GetRoll(Request.Url);
+            var manifestJson = GetCachedManifest(roll.DlcsManifest);
             var jo = JObject.Parse(manifestJson);
             EnhanceManifest(jo, roll);
-            return new ContentResult
+            Response.Headers["Access-Control-Allow-Origin"] = "*";
+            return Content(jo.ToString(Formatting.Indented), "application/json");
+        }
+
+        private Roll GetRoll(Uri uri)
+        {
+            Roll roll = null;
+            var uriAuthority = uri.GetLeftPart(UriPartial.Authority);
+            var requestAuthority = Request.Url.GetLeftPart(UriPartial.Authority);
+            if (uriAuthority == requestAuthority && uri.AbsolutePath.StartsWith("/roll/"))
             {
-                Content = jo.ToString(Formatting.Indented),
-                ContentType = "application/json"
+                var id = uri.AbsolutePath.Substring("/roll/".Length);
+                roll = GetCachedRolls().FirstOrDefault(r => r.Id == id);
+            }
+            return roll;
+        }
+
+        public ActionResult Manifest()
+        {
+            var urlPath = Request.Url.AbsolutePath.Substring("manifest/".Length + 1);
+            var rangeFile = HttpContext.Server.MapPath("~/App_Data/ranges/" + urlPath + ".json");
+            if (!System.IO.File.Exists(rangeFile))
+            {
+                return HttpNotFound("Could not find stored range");
+            }
+            var json = System.IO.File.ReadAllText(rangeFile);
+            var range = JsonConvert.DeserializeObject<RangeData>(json);
+
+            // first get the source manifest
+            var manifestJson = GetCachedManifest(range.ManifestId);
+            var sourceManifest = JObject.Parse(manifestJson);
+            // Now take the chosen canvases out of the source manifest and insert them into our template
+            var newManifest = GetManifestTemplate();
+            var sourceCanvases = sourceManifest["sequences"][0]["canvases"];
+            var newCanvases = new JArray();
+            bool adding = false;
+            foreach (var canvas in sourceCanvases)
+            {
+                if (canvas["@id"].ToString() == range.StartCanvas)
+                {
+                    adding = true;
+                }
+                if (canvas["@id"].ToString() == range.EndCanvas)
+                {
+                    adding = false;
+                    newCanvases.Add(canvas);
+                }
+                if (adding)
+                {
+                    newCanvases.Add(canvas);    
+                }
+            }
+            newManifest["@id"] = Request.Url.AbsoluteUri;
+            newManifest["sequences"][0]["@id"] = Request.Url.AbsoluteUri + "/sequence";
+            newManifest["sequences"][0]["canvases"] = newCanvases;
+            newManifest["label"] = range.Label;
+            newManifest["metadata"] = new JArray { Metadata("Type", range.UnitType) };
+            Response.Headers["Access-Control-Allow-Origin"] = "*";
+            return Content(newManifest.ToString(Formatting.Indented), "application/json");
+        }
+
+        private JObject Metadata(string label, string value)
+        {
+            return new JObject
+            {
+                ["label"] = label,
+                ["value"] = value
             };
+        }
+
+        private JObject GetManifestTemplate()
+        {
+            var templateFile = HttpContext.Server.MapPath("~/App_Data/manifest-template.json");
+            var json = System.IO.File.ReadAllText(templateFile);
+            return JObject.Parse(json);
+        }
+
+        private DirectoryInfo GetDirectoryForRanges(string manifestId)
+        {
+            var folder = manifestId.GetFileSafeName();
+            return new DirectoryInfo(HttpContext.Server.MapPath("~/App_Data/ranges/" + folder));
+        }
+
+        [HttpPost]
+        public ActionResult SaveRange(RangeData range)
+        {
+            if (string.IsNullOrWhiteSpace(range.ManifestId) 
+                || string.IsNullOrWhiteSpace(range.StartCanvas) 
+                || string.IsNullOrWhiteSpace(range.EndCanvas))
+            {
+                throw new ApplicationException("Missing range data");
+            }
+            var di = GetDirectoryForRanges(range.ManifestId);
+            int index = 1;
+            if (di.Exists)
+            {
+                var existingFileNames = di.GetFiles().Select(fi => fi.Name.Replace(".json", "")).OrderBy(s => s);
+                var max = existingFileNames.LastOrDefault();
+                if (max != null)
+                {
+                    index = int.Parse(max) + 1;
+                }
+            }
+            else
+            {
+                di.Create();
+            }
+            var rangeFilename = index.ToString("D4");
+            range.Id = string.Format("{0}/{1}", di.Name, rangeFilename);
+            range.RangeManifestId = Request.Url.GetLeftPart(UriPartial.Authority) + "/manifest/" + range.Id;
+            var json = JsonConvert.SerializeObject(range, Formatting.Indented);
+            var target = Path.Combine(di.FullName, rangeFilename + ".json");
+            System.IO.File.WriteAllText(target, json, Encoding.UTF8);
+            return Content(json, "application/json");
+        }
+
+        public ActionResult Ranges(string id)
+        {
+            var ranges = new List<RangeData>();
+            var di = GetDirectoryForRanges(id);
+            if (di.Exists)
+            {
+                foreach (var file in di.GetFiles())
+                {
+                    var data = System.IO.File.ReadAllText(file.FullName);
+                    ranges.Add(JsonConvert.DeserializeObject<RangeData>(data));
+                }
+            }
+            return Content(
+                JsonConvert.SerializeObject(ranges.ToArray(), Formatting.Indented), 
+                "application/json");
         }
 
         private void EnhanceManifest(JObject manifest, Roll roll)
@@ -51,9 +176,9 @@ namespace IdaSortingOffice.Controllers
             foreach (var canvas in canvases)
             {
                 // dirty...
-                const string n2param = "&n2=";
+                const string n2Param = "&n2=";
                 var canvasId = canvas["@id"].ToString();
-                var n2 = canvasId.Substring(canvasId.IndexOf(n2param) + n2param.Length);
+                var n2 = canvasId.Substring(canvasId.IndexOf(n2Param) + n2Param.Length);
                 var newCanvasId = string.Format("{0}canvas/{1}", manifestId, n2);
                 canvas["@id"] = newCanvasId;
                 canvas["images"][0]["on"] = newCanvasId;
@@ -70,15 +195,11 @@ namespace IdaSortingOffice.Controllers
                 }
             }
         }
-
-        private void DecorateManifest(JObject manifest, string ocrData)
+        
+        private string GetCachedManifest(string url)
         {
-            // todo
-        }
-
-        private string GetDlcsRollJson(string url)
-        {
-            string key = "roll-" + url;
+            // Not suitable for a production system, will run out of memory...
+            string key = "manifest-" + url;
             string json = (string)HttpContext.Cache.Get(key);
             if (json == null)
             {

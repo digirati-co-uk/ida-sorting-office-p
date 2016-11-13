@@ -1,9 +1,11 @@
 
-
+var loadedResource;
 var canvasList;
 var bigImage;
 var authDo;
 var assumeFullMax = false;
+var startCanvas = null;
+var endCanvas = null;
 
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
@@ -23,8 +25,14 @@ pop += "                    <button id=\"authDo\" type=\"button\" class=\"btn bt
 pop += "                <\/div>";
 pop += "            <\/div>";
 pop += "            <div class=\"modal-footer\">";
-pop += "                <button id=\"mdlPrev\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Prev<\/button>";
-pop += "                <button id=\"mdlNext\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Next<\/button>";
+pop += "                <div style=\"float:left;\">";
+pop += "                    <button id=\"mkStart\" type=\"button\" class=\"btn btn-primary btn-mark\" data-uri=\"\">[start...<\/button>";
+pop += "                    <button id=\"mkEnd\" type=\"button\" class=\"btn btn-primary btn-mark\" data-uri=\"\">&nbsp;...end]<\/button>";
+pop += "                </div>";
+pop += "                <div style=\"float:right;\">";
+pop += "                    <button id=\"mdlPrev\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">&larr; Prev<\/button>";
+pop += "                    <button id=\"mdlNext\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Next &rarr;<\/button>";
+pop += "                </div>";
 pop += "            <\/div>";
 pop += "        <\/div>";
 pop += "    <\/div>";
@@ -49,14 +57,52 @@ rv += "<\/footer>";
 
 
 $(function() {
-    $('#mainContainer').append(rv);
+    $("#mainContainer").append(rv);
+    $("#manifestWait").hide();
     processQueryString();    
-    $('#manifestWait').hide();
-    $('#authOps').hide();
-    $('.modal-footer').show();
-    $('button.btn-prevnext').click(function(){
-        canvasId = $(this).attr('data-uri');
+    $("#authOps").hide();
+    $(".modal-footer").show();
+    $("button.btn-prevnext").click(function () {
+        var canvasId = $(this).attr("data-uri");
         selectForModal(canvasId, $("img.thumb[data-uri='" + canvasId + "']"));
+    });
+    $("button.btn-mark").click(function () {
+        var canvasId = $(this).attr("data-uri");
+        if (this.id === "mkStart") {
+            startCanvas = canvasId;
+        } else {
+            endCanvas = canvasId;
+        }
+        markSelection();
+    });
+    $("#clearSelection").click(function() {
+        startCanvas = null;
+        endCanvas = null;
+        markSelection();
+    });
+    $("#makeManifest").click(function () {
+        var s = findCanvasIndex(startCanvas);
+        var e = findCanvasIndex(endCanvas);
+        if (!(loadedResource && s >= 0 && e >= s)) {
+            alert("invalid selection");
+            return;
+        }
+        var range = {
+            manifestId: loadedResource,
+            startCanvas: startCanvas,
+            endCanvas: endCanvas
+        };
+        $.ajax({
+            url: '/SaveRange',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(range),
+            dataType: 'json'
+        }).done(function(data, textStatus, xhr) {
+            window.location.href = "http://universalviewer.io/?manifest=" + data.RangeManifestId;
+        }).fail(function(xhr, textStatus, error) {
+            alert(error);
+        });
     });
     bigImage = $('#bigImage');
     bigImage.bind('error', function (e) {
@@ -70,12 +116,14 @@ $(function() {
 
 function processQueryString(){    
     var qs = /manifest=(.*)/g.exec(window.location.search);
-    if(qs && qs[1]){        
+    if (qs && qs[1]) {
+        loadedResource = qs[1];
         $('#manifestWait').show();
-        $('#title').text('loading ' + qs[1] + '...');
-        $.getJSON(qs[1], function (iiifResource) {
-            if(iiifResource['@type'] == "sc:Collection"){
-                $.getJSON(iiifResource.manifests[0]['@id'], function (cManifest) {
+        $('#title').text(loadedResource);
+        $.getJSON(loadedResource, function (iiifResource) {
+            if (iiifResource['@type'] == "sc:Collection") {
+                loadedResource = iiifResource.manifests[0]['@id'];
+                $.getJSON(loadedResource, function (cManifest) {
                     load(cManifest);
                 });
             } else {
@@ -101,17 +149,49 @@ function load(manifest){
     $('#manifestWait').hide();
 }
 
+var thumbImageTemplate = "<img class=\"thumb\" title=\"{label}\" data-uri=\"{canvasId}\" data-src=\"{dataSrc}\" {dimensions} />";
+
 function drawThumbs(){
-    var thumbs = $('#thumbs');
+    var thumbs = $("#thumbs");
     thumbs.empty();
+    var preferredSize = parseInt(localStorage.getItem("thumbSize"));
     for(var i=0; i<canvasList.length; i++){
         var canvas = canvasList[i];
-        var thumbHtml = '<div class="tc">' + (canvas.label || '') + '<br/>';
-        var thumb = getThumb(canvas);
+        var divclass = "ocrUnknown";
+        var additionalHtml = "";
+        var imgLabel = "";
+        if (canvas.service && canvas.service["@context"] === "https://dlcs-ida.org/ocr-info") {
+            var isType = canvas.service["Typescript"];
+            divclass = isType ? "ocrType" : "ocrHand";
+            if (isType) {
+                additionalHtml += "<div class=\"confBar\"><div class=\"conf\" style=\"width:" + canvas.service["Average_confidence"] + "%;\"></div></div>";
+            } 
+            var textLength = canvas.service["Full_text_length"];
+            var entities = canvas.service["Total_entities_found"];
+            additionalHtml += "<div class=\"imgInfo\">";
+            if(textLength>3) additionalHtml += "T: " + textLength + "&nbsp;&nbsp;";
+            if (entities > 1) additionalHtml += "E: " + entities;
+            additionalHtml += "&nbsp;</div>";
+            var stats = canvas.service["Entity_stats"];
+            if (stats) {
+                for (var prop in stats) {
+                    if (stats.hasOwnProperty(prop)) {
+                        imgLabel += "\r\n" + prop + ": " + stats[prop];
+                    }
+                }
+            }
+        }
+        var thumbHtml = '<div class="tc ' + divclass + '"><div class=\"cvLabel\">' + (canvas.label || '') + '</div>';
+        var thumb = getThumb(canvas, preferredSize);
         if(!thumb){ 
             thumbHtml += '<div class="thumb-no-access">Image not available</div></div>';
         } else {
-            thumbHtml += '<img class="thumb" title="' + canvas.label + '" data-uri="' + canvas['@id'] + '" src="' + thumb + '" /></div>';
+            var thumbImg = thumbImageTemplate.replace("{label}", imgLabel).replace("{canvasId}", canvas["@id"]).replace("{dataSrc}", thumb.url);
+            var dimensions = "";
+            if (thumb.width && thumb.height) {
+                dimensions = "width=\"" + thumb.width + "\" height=\"" + thumb.height + "\"";
+            }
+            thumbHtml += thumbImg.replace("{dimensions}", dimensions) + additionalHtml + "</div>";
         }
         thumbs.append(thumbHtml);
     } 
@@ -119,6 +199,7 @@ function drawThumbs(){
         selectForModal($(this).attr('data-uri'), $(this));
         $('#imgModal').modal();
     });
+    $("img.thumb").unveil(300);
 }
 
 function makeThumbSizeSelector(){
@@ -159,6 +240,32 @@ function makeThumbSizeSelector(){
     }
 }
 
+function markSelection() {
+    $(".tc").removeClass("selected startmark endmark");
+    var thumbs = $("img.thumb").toArray();
+    var selection = false;
+    for (var i = 0; i < thumbs.length; i++) {
+        var thumb = $(thumbs[i]);
+        if (thumb.attr("data-uri") === startCanvas) {
+            thumb.parents("div.tc").addClass("startmark");
+            selection = true;
+        }
+        if (selection && endCanvas) {
+            thumb.parents("div.tc").addClass("selected");
+        }
+        if (thumb.attr("data-uri") === endCanvas) {
+            if (startCanvas && !selection) {
+                // end is before start;
+                endCanvas = null;
+                $(".tc").removeClass("selected startmark endmark");
+                i = -1;
+            }
+            thumb.parents("div.tc").addClass("endmark");
+            selection = false;
+        }
+    }
+}
+
 function selectForModal(canvasId, $image) {
     $('img.thumb').css('border', '2px solid white');
     $image.css('border', '2px solid tomato');
@@ -167,9 +274,10 @@ function selectForModal(canvasId, $image) {
         var canvas = canvasList[cvIdx];
         var imgToLoad = getMainImg(canvas);
         bigImage.show();
-        bigImage.attr('src', imgToLoad); // may fail if auth
-        bigImage.attr('data-src', imgToLoad); // to preserve
-        bigImage.attr('data-uri', getImageService(canvas));
+        bigImage.attr("src", imgToLoad); // may fail if auth
+        bigImage.attr("data-src", imgToLoad); // to preserve
+        bigImage.attr("data-uri", getImageService(canvas));
+        $(".btn-mark").attr("data-uri", canvasId);
         $('#mdlLabel').text(canvas.label);
         if(cvIdx > 0){
             $('#mdlPrev').prop('disabled', false);
@@ -189,8 +297,8 @@ function selectForModal(canvasId, $image) {
 }
 
 function findCanvasIndex(canvasId){
-    for(idx = 0; idx < canvasList.length; idx++){
-        if(canvasId == canvasList[idx]['@id']){
+    for(var idx = 0; idx < canvasList.length; idx++){
+        if(canvasId === canvasList[idx]["@id"]){
             return idx;
         }
     }
@@ -217,32 +325,39 @@ function getImageService(canvas){
             }
         }
     }
-    return imgService['@id'];
+    return imgService["@id"];
 }
 
-function getThumb(canvas){
+function getThumb(canvas, preferredSize){
     if(!canvas.thumbnail){
         return null;
     }
-    if(typeof canvas.thumbnail === "string"){
-        return canvas.thumbnail;
+    if (typeof canvas.thumbnail === "string") {
+        return {
+            url: canvas.thumbnail
+        };
     }
-    var thumb = canvas.thumbnail['@id'];
     if(canvas.thumbnail.service && canvas.thumbnail.service.sizes){
         // manifest gives thumb size hints
         // dumb version exact match and assumes ascending - TODO: https://gist.github.com/tomcrane/093c6281d74b3bc8f59d
-        var particular = getParticularSizeThumb(canvas, localStorage.getItem('thumbSize'));
+        var particular = getParticularSizeThumb(canvas, preferredSize);
         if(particular) return particular;
     }
-    return thumb;
+    return {
+        url: canvas.thumbnail["@id"]
+    };
 }
 
 function getParticularSizeThumb(canvas, thumbSize) {
     var sizes = canvas.thumbnail.service.sizes;
     sizes.sort(function (a, b) { return a.width - b.width; });
     for (var i = sizes.length - 1; i >= 0; i--) {
-        if ((sizes[i].width == thumbSize || sizes[i].height == thumbSize) && sizes[i].width <= thumbSize && sizes[i].height <= thumbSize) {
-            return canvas.thumbnail.service['@id'] + "/full/" + sizes[i].width + "," + sizes[i].height + "/0/default.jpg";
+        if ((sizes[i].width === thumbSize || sizes[i].height === thumbSize) && sizes[i].width <= thumbSize && sizes[i].height <= thumbSize) {
+            return {
+                url: canvas.thumbnail.service["@id"] + "/full/" + sizes[i].width + "," + sizes[i].height + "/0/default.jpg",
+                width: sizes[i].width,
+                height: sizes[i].height
+            };
         }
     }
     return null;
@@ -382,3 +497,62 @@ function getServices(info) {
     }
     return svcInfo;
 }
+
+/**
+ * jQuery Unveil
+ * A very lightweight jQuery plugin to lazy load images
+ * http://luis-almeida.github.com/unveil
+ *
+ * Licensed under the MIT license.
+ * Copyright 2013 Luís Almeida
+ * https://github.com/luis-almeida
+ */
+
+; (function ($) {
+
+    $.fn.unveil = function (threshold, callback) {
+
+        var $v = $(".viewer"), $w = $(window),
+            th = threshold || 0,
+            retina = window.devicePixelRatio > 1,
+            attrib = retina ? "data-src-retina" : "data-src",
+            images = this,
+            loaded;
+
+        this.one("unveil", function () {
+            var source = this.getAttribute(attrib);
+            source = source || this.getAttribute("data-src");
+            if (source) {
+                console.log("setting src " + source);
+                this.setAttribute("src", source);
+                if (typeof callback === "function") callback.call(this);
+            }
+        });
+
+        function unveil() {
+            var inview = images.filter(function () {
+                var $e = $(this);
+                if ($e.is(":hidden")) return;
+
+                var wt = $w.scrollTop(),
+                    wb = wt + $w.height(),
+                    et = $e.offset().top,
+                    eb = et + $e.height();
+
+                return eb >= wt - th && et <= wb + th;
+            });
+
+            loaded = inview.trigger("unveil");
+            images = images.not(loaded);
+        }
+
+        $w.on("scroll.unveil resize.unveil lookup.unveil", unveil);
+        $v.on("scroll.unveil resize.unveil lookup.unveil", unveil);
+
+        unveil();
+
+        return this;
+
+    };
+
+})(window.jQuery);
