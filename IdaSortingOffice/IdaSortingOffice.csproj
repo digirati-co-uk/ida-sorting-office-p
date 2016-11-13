@@ -129,7 +129,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RangeData.cs" />
     <Compile Include="Models\Roll.cs" />
+    <Compile Include="Models\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -201,8 +203,11 @@
     <Content Include="App_Data\ocrdata\T-21_ROLL-07.json" />
     <Content Include="App_Data\ocrdata\T-21_ROLL-08.json" />
     <Content Include="App_Data\ocrdata\T-21_ROLL-09.json" />
+    <Content Include="App_Data\manifest-template.json" />
+    <Content Include="App_Data\ranges\readme.md" />
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

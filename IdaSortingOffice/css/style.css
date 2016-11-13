@@ -99,3 +99,19 @@ footer {
     height: 5px;
 }
 
+.tc.startmark {
+    border-left: 3px dotted dodgerblue;
+    border-top: 3px dotted dodgerblue;
+    border-bottom: 3px dotted dodgerblue;
+}
+
+
+.tc.endmark {
+    border-right: 3px dotted dodgerblue;
+    border-top: 3px dotted dodgerblue;
+    border-bottom: 3px dotted dodgerblue;
+}
+
+.tc.selected {
+    background-color: dodgerblue;
+}

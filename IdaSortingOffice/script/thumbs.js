@@ -1,9 +1,11 @@
 
-
+var loadedResource;
 var canvasList;
 var bigImage;
 var authDo;
 var assumeFullMax = false;
+var startCanvas = null;
+var endCanvas = null;
 
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
@@ -23,8 +25,14 @@ pop += "                    <button id=\"authDo\" type=\"button\" class=\"btn bt
 pop += "                <\/div>";
 pop += "            <\/div>";
 pop += "            <div class=\"modal-footer\">";
-pop += "                <button id=\"mdlPrev\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Prev<\/button>";
-pop += "                <button id=\"mdlNext\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Next<\/button>";
+pop += "                <div style=\"float:left;\">";
+pop += "                    <button id=\"mkStart\" type=\"button\" class=\"btn btn-primary btn-mark\" data-uri=\"\">[start...<\/button>";
+pop += "                    <button id=\"mkEnd\" type=\"button\" class=\"btn btn-primary btn-mark\" data-uri=\"\">&nbsp;...end]<\/button>";
+pop += "                </div>";
+pop += "                <div style=\"float:right;\">";
+pop += "                    <button id=\"mdlPrev\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">&larr; Prev<\/button>";
+pop += "                    <button id=\"mdlNext\" type=\"button\" class=\"btn btn-primary btn-prevnext\" data-uri=\"\">Next &rarr;<\/button>";
+pop += "                </div>";
 pop += "            <\/div>";
 pop += "        <\/div>";
 pop += "    <\/div>";
@@ -49,14 +57,52 @@ rv += "<\/footer>";
 
 
 $(function() {
-    $('#mainContainer').append(rv);
+    $("#mainContainer").append(rv);
+    $("#manifestWait").hide();
     processQueryString();    
-    $('#manifestWait').hide();
-    $('#authOps').hide();
-    $('.modal-footer').show();
-    $('button.btn-prevnext').click(function(){
-        canvasId = $(this).attr('data-uri');
+    $("#authOps").hide();
+    $(".modal-footer").show();
+    $("button.btn-prevnext").click(function () {
+        var canvasId = $(this).attr("data-uri");
         selectForModal(canvasId, $("img.thumb[data-uri='" + canvasId + "']"));
+    });
+    $("button.btn-mark").click(function () {
+        var canvasId = $(this).attr("data-uri");
+        if (this.id === "mkStart") {
+            startCanvas = canvasId;
+        } else {
+            endCanvas = canvasId;
+        }
+        markSelection();
+    });
+    $("#clearSelection").click(function() {
+        startCanvas = null;
+        endCanvas = null;
+        markSelection();
+    });
+    $("#makeManifest").click(function () {
+        var s = findCanvasIndex(startCanvas);
+        var e = findCanvasIndex(endCanvas);
+        if (!(loadedResource && s >= 0 && e >= s)) {
+            alert("invalid selection");
+            return;
+        }
+        var range = {
+            manifestId: loadedResource,
+            startCanvas: startCanvas,
+            endCanvas: endCanvas
+        };
+        $.ajax({
+            url: '/SaveRange',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(range),
+            dataType: 'json'
+        }).done(function(data, textStatus, xhr) {
+            window.location.href = "http://universalviewer.io/?manifest=" + data.RangeManifestId;
+        }).fail(function(xhr, textStatus, error) {
+            alert(error);
+        });
     });
     bigImage = $('#bigImage');
     bigImage.bind('error', function (e) {
@@ -70,12 +116,14 @@ $(function() {
 
 function processQueryString(){    
     var qs = /manifest=(.*)/g.exec(window.location.search);
-    if(qs && qs[1]){        
+    if (qs && qs[1]) {
+        loadedResource = qs[1];
         $('#manifestWait').show();
-        $('#title').text('loading ' + qs[1] + '...');
-        $.getJSON(qs[1], function (iiifResource) {
-            if(iiifResource['@type'] == "sc:Collection"){
-                $.getJSON(iiifResource.manifests[0]['@id'], function (cManifest) {
+        $('#title').text(loadedResource);
+        $.getJSON(loadedResource, function (iiifResource) {
+            if (iiifResource['@type'] == "sc:Collection") {
+                loadedResource = iiifResource.manifests[0]['@id'];
+                $.getJSON(loadedResource, function (cManifest) {
                     load(cManifest);
                 });
             } else {
@@ -192,6 +240,32 @@ function makeThumbSizeSelector(){
     }
 }
 
+function markSelection() {
+    $(".tc").removeClass("selected startmark endmark");
+    var thumbs = $("img.thumb").toArray();
+    var selection = false;
+    for (var i = 0; i < thumbs.length; i++) {
+        var thumb = $(thumbs[i]);
+        if (thumb.attr("data-uri") === startCanvas) {
+            thumb.parents("div.tc").addClass("startmark");
+            selection = true;
+        }
+        if (selection && endCanvas) {
+            thumb.parents("div.tc").addClass("selected");
+        }
+        if (thumb.attr("data-uri") === endCanvas) {
+            if (startCanvas && !selection) {
+                // end is before start;
+                endCanvas = null;
+                $(".tc").removeClass("selected startmark endmark");
+                i = -1;
+            }
+            thumb.parents("div.tc").addClass("endmark");
+            selection = false;
+        }
+    }
+}
+
 function selectForModal(canvasId, $image) {
     $('img.thumb').css('border', '2px solid white');
     $image.css('border', '2px solid tomato');
@@ -200,9 +274,10 @@ function selectForModal(canvasId, $image) {
         var canvas = canvasList[cvIdx];
         var imgToLoad = getMainImg(canvas);
         bigImage.show();
-        bigImage.attr('src', imgToLoad); // may fail if auth
-        bigImage.attr('data-src', imgToLoad); // to preserve
-        bigImage.attr('data-uri', getImageService(canvas));
+        bigImage.attr("src", imgToLoad); // may fail if auth
+        bigImage.attr("data-src", imgToLoad); // to preserve
+        bigImage.attr("data-uri", getImageService(canvas));
+        $(".btn-mark").attr("data-uri", canvasId);
         $('#mdlLabel').text(canvas.label);
         if(cvIdx > 0){
             $('#mdlPrev').prop('disabled', false);
@@ -222,8 +297,8 @@ function selectForModal(canvasId, $image) {
 }
 
 function findCanvasIndex(canvasId){
-    for(idx = 0; idx < canvasList.length; idx++){
-        if(canvasId == canvasList[idx]['@id']){
+    for(var idx = 0; idx < canvasList.length; idx++){
+        if(canvasId === canvasList[idx]["@id"]){
             return idx;
         }
     }
@@ -437,7 +512,7 @@ function getServices(info) {
 
     $.fn.unveil = function (threshold, callback) {
 
-        var $w = $(".viewer"),
+        var $v = $(".viewer"), $w = $(window),
             th = threshold || 0,
             retina = window.devicePixelRatio > 1,
             attrib = retina ? "data-src-retina" : "data-src",
@@ -472,6 +547,7 @@ function getServices(info) {
         }
 
         $w.on("scroll.unveil resize.unveil lookup.unveil", unveil);
+        $v.on("scroll.unveil resize.unveil lookup.unveil", unveil);
 
         unveil();
 

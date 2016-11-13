@@ -19,6 +19,16 @@ namespace IdaSortingOffice
                 defaults: new { controller = "Home", action = "Roll" }
             );
             routes.MapRoute(
+                name: "Manifest",
+                url: "manifest/{*pathInfo}",
+                defaults: new { controller = "Home", action = "Manifest" }
+            );
+            routes.MapRoute(
+                name: "SaveRange",
+                url: "SaveRange",
+                defaults: new { controller = "Home", action = "SaveRange" }
+            );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
