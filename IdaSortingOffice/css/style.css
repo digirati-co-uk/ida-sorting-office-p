@@ -17,6 +17,7 @@ html,body {
     padding:5px;
     cursor: pointer;
     font-size:11px;
+    margin: 1px;
 }
 
 .tc img {
@@ -87,3 +88,14 @@ footer {
         padding-right: 3px;
     }
 }
+
+.confBar {
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+}
+.conf {
+    background-color: green;
+    height: 5px;
+}
+
