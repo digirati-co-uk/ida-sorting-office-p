@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Web;
 using System.Web.Mvc;
 using CoreTechs.Common.Text;
 using IdaSortingOffice.Models;
@@ -26,6 +27,8 @@ namespace IdaSortingOffice.Controllers
             var jo = JObject.Parse(manifestJson);
             EnhanceManifest(jo, roll);
             Response.Headers["Access-Control-Allow-Origin"] = "*";
+            Response.Cache.SetCacheability(HttpCacheability.Public);
+            Response.Cache.SetMaxAge(TimeSpan.FromMinutes(30));
             return Content(jo.ToString(Formatting.Indented), "application/json");
         }
 
@@ -83,6 +86,8 @@ namespace IdaSortingOffice.Controllers
             newManifest["label"] = range.Label;
             newManifest["metadata"] = new JArray { Metadata("Type", range.UnitType) };
             Response.Headers["Access-Control-Allow-Origin"] = "*";
+            Response.Cache.SetCacheability(HttpCacheability.Public);
+            Response.Cache.SetMaxAge(TimeSpan.FromMinutes(30));
             return Content(newManifest.ToString(Formatting.Indented), "application/json");
         }
 

@@ -123,14 +123,19 @@ function processQueryString(){
         loadedResource = qs[1];
         $('#manifestWait').show();
         $('#title').text(loadedResource);
-        $.getJSON(loadedResource, function (iiifResource) {
-            if (iiifResource['@type'] == "sc:Collection") {
-                loadedResource = iiifResource.manifests[0]['@id'];
-                $.getJSON(loadedResource, function (cManifest) {
-                    load(cManifest);
-                });
-            } else {
-                load(iiifResource);
+        $.ajax({
+            dataType: "json",
+            url: loadedResource,
+            cache: true,
+            success: function (iiifResource) {
+                if (iiifResource["@type"] === "sc:Collection") {
+                    loadedResource = iiifResource.manifests[0]["@id"];
+                    $.getJSON(loadedResource, function (cManifest) {
+                        load(cManifest);
+                    });
+                } else {
+                    load(iiifResource);
+                }
             }
         });
     }
