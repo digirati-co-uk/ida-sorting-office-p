@@ -26,10 +26,16 @@ namespace IdaSortingOffice.Controllers
             var manifestJson = GetCachedManifest(roll.DlcsManifest);
             var jo = JObject.Parse(manifestJson);
             EnhanceManifest(jo, roll);
+            SetManifestHeaders();
+            return Content(jo.ToString(Formatting.Indented), "application/json");
+        }
+
+        private void SetManifestHeaders()
+        {
             Response.Headers["Access-Control-Allow-Origin"] = "*";
             Response.Cache.SetCacheability(HttpCacheability.Public);
             Response.Cache.SetMaxAge(TimeSpan.FromMinutes(30));
-            return Content(jo.ToString(Formatting.Indented), "application/json");
+            Response.Cache.SetSlidingExpiration(true);
         }
 
         private Roll GetRoll(Uri uri)
@@ -85,9 +91,7 @@ namespace IdaSortingOffice.Controllers
             newManifest["sequences"][0]["canvases"] = newCanvases;
             newManifest["label"] = range.Label;
             newManifest["metadata"] = new JArray { Metadata("Type", range.UnitType) };
-            Response.Headers["Access-Control-Allow-Origin"] = "*";
-            Response.Cache.SetCacheability(HttpCacheability.Public);
-            Response.Cache.SetMaxAge(TimeSpan.FromMinutes(30));
+            SetManifestHeaders();
             return Content(newManifest.ToString(Formatting.Indented), "application/json");
         }
 
