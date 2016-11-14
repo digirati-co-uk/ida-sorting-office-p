@@ -1,0 +1,9 @@
+﻿{
+  "Id": "localhost-47724-roll-M-1011-145-/0003",
+  "ManifestId": "http://localhost:47724/roll/M-1011/145/",
+  "StartCanvas": "http://localhost:47724/roll/M-1011/145/canvas/345",
+  "EndCanvas": "http://localhost:47724/roll/M-1011/145/canvas/370",
+  "UnitType": null,
+  "Label": null,
+  "RangeManifestId": "http://localhost:47724/manifest/localhost-47724-roll-M-1011-145-/0003"
+}

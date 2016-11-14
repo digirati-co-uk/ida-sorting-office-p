@@ -13,14 +13,15 @@
     <div class="container body-content" id="mainContainer">
         <div class="row first">
             <div class="col-md-4">
-                <h1 style="margin-top:0">Sorting Office</h1>
+                <a href="\"><h2 style="margin-top:0">Sorting Office</h2></a>
             </div>
-            <div class="col-md-1">
-                <a href="\">Roll list</a>
-            </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <button id="clearSelection" class="btn btn-primary">Clear selection</button>
                 <button id="makeManifest" class="btn btn-primary">Make manifest</button>
+                <select id="manifestSelector">
+                    <option value="">In this roll...</option>
+                </select>
+                <button id="viewManifest" class="btn btn-primary">View...</button>
             </div>
             <div class="col-md-2" id="thumbSizeSelector"></div>
         </div>

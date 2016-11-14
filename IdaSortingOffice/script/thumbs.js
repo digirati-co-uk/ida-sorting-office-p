@@ -6,6 +6,7 @@ var authDo;
 var assumeFullMax = false;
 var startCanvas = null;
 var endCanvas = null;
+var ranges = null;
 
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
@@ -98,8 +99,8 @@ $(function() {
             contentType: 'application/json',
             data: JSON.stringify(range),
             dataType: 'json'
-        }).done(function(data, textStatus, xhr) {
-            window.location.href = "http://universalviewer.io/?manifest=" + data.RangeManifestId;
+        }).done(function (data, textStatus, xhr) {
+            loadManifestPage(data.RangeManifestId);
         }).fail(function(xhr, textStatus, error) {
             alert(error);
         });
@@ -112,7 +113,9 @@ $(function() {
     authDo.bind('click', doClickthroughViaWindow);
 });
 
-
+function loadManifestPage(manifestUrl) {
+    window.location.href = "http://universalviewer.io/?manifest=" + manifestUrl;
+}
 
 function processQueryString(){    
     var qs = /manifest=(.*)/g.exec(window.location.search);
@@ -134,7 +137,8 @@ function processQueryString(){
 }
 
 
-function load(manifest){    
+function load(manifest) {
+    getCreatedManifests();
     var thumbs = $('#thumbs');
     thumbs.empty();
     $('#title').text(manifest.label);
@@ -149,6 +153,30 @@ function load(manifest){
     $('#manifestWait').hide();
 }
 
+function getCreatedManifests() {
+    $.getJSON("/home/ranges?id=" + loadedResource, function (manifests) {
+        ranges = manifests;
+        $("#manifestSelector").append("<option value=\"" + loadedResource + "\">Original manifest</option>");
+        for (var i = 0; i < manifests.length; i++) {
+            $("#manifestSelector").append("<option value=\"" + manifests[i].RangeManifestId + "\">" + manifests[i].Id + "</option>");
+        }
+        $("#manifestSelector").change(function() {
+            for (var r = 0; r < ranges.length; r++) {
+                if (ranges[r].RangeManifestId === $(this).val()) {
+                    startCanvas = ranges[r].StartCanvas;
+                    endCanvas = ranges[r].EndCanvas;
+                    var start = markSelection();
+                    start.scrollIntoView();
+                    break;
+                }
+            }
+        });
+        $("#viewManifest").click(function() {
+            loadManifestPage($("#manifestSelector").val());
+        });
+    });
+}
+
 var thumbImageTemplate = "<img class=\"thumb\" title=\"{label}\" data-uri=\"{canvasId}\" data-src=\"{dataSrc}\" {dimensions} />";
 
 function drawThumbs(){
@@ -159,12 +187,16 @@ function drawThumbs(){
         var canvas = canvasList[i];
         var divclass = "ocrUnknown";
         var additionalHtml = "";
+        var confBar = "<div class=\"confBarPlaceholder\"></div>";
         var imgLabel = "";
         if (canvas.service && canvas.service["@context"] === "https://dlcs-ida.org/ocr-info") {
             var isType = canvas.service["Typescript"];
             divclass = isType ? "ocrType" : "ocrHand";
             if (isType) {
-                additionalHtml += "<div class=\"confBar\"><div class=\"conf\" style=\"width:" + canvas.service["Average_confidence"] + "%;\"></div></div>";
+                var conf = canvas.service["Average_confidence"] || 0;
+                var accu = canvas.service["Spelling_accuracy"] || 0;
+                confBar = "<div class=\"confBar\"><div class=\"conf\" style=\"width:" + conf + "%;\"></div></div>";
+                confBar += "<div class=\"confBar\"><div class=\"accu\" style=\"width:" + accu + "%;\"></div></div>";
             } 
             var textLength = canvas.service["Full_text_length"];
             var entities = canvas.service["Total_entities_found"];
@@ -191,7 +223,7 @@ function drawThumbs(){
             if (thumb.width && thumb.height) {
                 dimensions = "width=\"" + thumb.width + "\" height=\"" + thumb.height + "\"";
             }
-            thumbHtml += thumbImg.replace("{dimensions}", dimensions) + additionalHtml + "</div>";
+            thumbHtml += thumbImg.replace("{dimensions}", dimensions) + confBar + additionalHtml + "</div>";
         }
         thumbs.append(thumbHtml);
     } 
@@ -241,6 +273,7 @@ function makeThumbSizeSelector(){
 }
 
 function markSelection() {
+    var startDiv = null;
     $(".tc").removeClass("selected startmark endmark");
     var thumbs = $("img.thumb").toArray();
     var selection = false;
@@ -249,6 +282,7 @@ function markSelection() {
         if (thumb.attr("data-uri") === startCanvas) {
             thumb.parents("div.tc").addClass("startmark");
             selection = true;
+            startDiv = thumb.parents("div.tc")[0];
         }
         if (selection && endCanvas) {
             thumb.parents("div.tc").addClass("selected");
@@ -264,6 +298,7 @@ function markSelection() {
             selection = false;
         }
     }
+    return startDiv;
 }
 
 function selectForModal(canvasId, $image) {

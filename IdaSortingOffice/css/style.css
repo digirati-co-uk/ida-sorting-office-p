@@ -98,6 +98,19 @@ footer {
     background-color: green;
     height: 5px;
 }
+.confBar {
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+}
+.confBarPlaceholder {
+    width: 100%;
+    height: 10px;
+}
+.accu {
+    background-color: coral;
+    height: 5px;
+}
 
 .tc.startmark {
     border-left: 3px dotted dodgerblue;
