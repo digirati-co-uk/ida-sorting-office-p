@@ -5,7 +5,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0001"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0001.hocr"
     },
     {
         "Average_confidence":75,
@@ -14,9 +14,10 @@
             "ORG":"1"
         },
         "Full_text_length":250,
+        "Spelling_accuracy":87,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0002"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0002.hocr"
     },
     {
         "Average_confidence":72,
@@ -24,9 +25,10 @@
             "ORG":"1"
         },
         "Full_text_length":137,
+        "Spelling_accuracy":80,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0003"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0003.hocr"
     },
     {
         "Average_confidence":54,
@@ -34,23 +36,25 @@
         "Full_text_length":255,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0004"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0004.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":175,
+        "Spelling_accuracy":100,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0005"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0005.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":186,
+        "Spelling_accuracy":86,
         "Total_entities_found":4,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0006"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0006.hocr"
     },
     {
         "Average_confidence":56,
@@ -58,7 +62,7 @@
         "Full_text_length":641,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0007"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0007.hocr"
     },
     {
         "Average_confidence":58,
@@ -66,7 +70,7 @@
         "Full_text_length":80,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0008"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0008.hocr"
     },
     {
         "Average_confidence":54,
@@ -74,7 +78,7 @@
         "Full_text_length":234,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0009"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0009.hocr"
     },
     {
         "Average_confidence":50,
@@ -82,7 +86,7 @@
         "Full_text_length":221,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0010"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0010.hocr"
     },
     {
         "Average_confidence":53,
@@ -90,7 +94,7 @@
         "Full_text_length":707,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0011"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0011.hocr"
     },
     {
         "Average_confidence":53,
@@ -98,7 +102,7 @@
         "Full_text_length":262,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0012"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0012.hocr"
     },
     {
         "Average_confidence":57,
@@ -106,7 +110,7 @@
         "Full_text_length":337,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0013"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0013.hocr"
     },
     {
         "Average_confidence":54,
@@ -114,7 +118,7 @@
         "Full_text_length":42,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0014"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0014.hocr"
     },
     {
         "Average_confidence":95,
@@ -122,7 +126,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0015"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0015.hocr"
     },
     {
         "Average_confidence":52,
@@ -130,7 +134,7 @@
         "Full_text_length":169,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0016"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0016.hocr"
     },
     {
         "Average_confidence":60,
@@ -138,9 +142,10 @@
             "PERSON":"1"
         },
         "Full_text_length":752,
+        "Spelling_accuracy":76,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0017"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0017.hocr"
     },
     {
         "Average_confidence":59,
@@ -148,7 +153,7 @@
         "Full_text_length":1537,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0018"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0018.hocr"
     },
     {
         "Average_confidence":56,
@@ -156,7 +161,7 @@
         "Full_text_length":41,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0019"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0019.hocr"
     },
     {
         "Average_confidence":95,
@@ -164,15 +169,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0020"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0020.hocr"
     },
     {
         "Average_confidence":75,
         "Entity_stats":{},
         "Full_text_length":89,
+        "Spelling_accuracy":50,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0021"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0021.hocr"
     },
     {
         "Average_confidence":54,
@@ -180,15 +186,16 @@
         "Full_text_length":440,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0022"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0022.hocr"
     },
     {
         "Average_confidence":62,
         "Entity_stats":{},
         "Full_text_length":175,
+        "Spelling_accuracy":88,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0023"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0023.hocr"
     },
     {
         "Average_confidence":53,
@@ -196,7 +203,7 @@
         "Full_text_length":235,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0024"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0024.hocr"
     },
     {
         "Average_confidence":48,
@@ -204,7 +211,7 @@
         "Full_text_length":190,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0025"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0025.hocr"
     },
     {
         "Average_confidence":52,
@@ -212,7 +219,7 @@
         "Full_text_length":899,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0026"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0026.hocr"
     },
     {
         "Average_confidence":53,
@@ -220,15 +227,16 @@
         "Full_text_length":44,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0027"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0027.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":65,
+        "Spelling_accuracy":90,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0028"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0028.hocr"
     },
     {
         "Average_confidence":61,
@@ -236,9 +244,10 @@
             "PERSON":"1"
         },
         "Full_text_length":38,
+        "Spelling_accuracy":100,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0029"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0029.hocr"
     },
     {
         "Average_confidence":51,
@@ -246,7 +255,7 @@
         "Full_text_length":447,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0030"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0030.hocr"
     },
     {
         "Average_confidence":49,
@@ -254,7 +263,7 @@
         "Full_text_length":131,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0031"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0031.hocr"
     },
     {
         "Average_confidence":50,
@@ -262,7 +271,7 @@
         "Full_text_length":176,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0032"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0032.hocr"
     },
     {
         "Average_confidence":55,
@@ -270,7 +279,7 @@
         "Full_text_length":90,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0033"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0033.hocr"
     },
     {
         "Average_confidence":56,
@@ -278,7 +287,7 @@
         "Full_text_length":298,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0034"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0034.hocr"
     },
     {
         "Average_confidence":51,
@@ -286,7 +295,7 @@
         "Full_text_length":244,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0035"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0035.hocr"
     },
     {
         "Average_confidence":95,
@@ -294,7 +303,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0036"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0036.hocr"
     },
     {
         "Average_confidence":56,
@@ -302,7 +311,7 @@
         "Full_text_length":309,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0037"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0037.hocr"
     },
     {
         "Average_confidence":55,
@@ -310,7 +319,7 @@
         "Full_text_length":103,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0038"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0038.hocr"
     },
     {
         "Average_confidence":58,
@@ -318,15 +327,16 @@
         "Full_text_length":614,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0039"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0039.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":61,
+        "Spelling_accuracy":100,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0040"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0040.hocr"
     },
     {
         "Average_confidence":59,
@@ -334,15 +344,16 @@
         "Full_text_length":1291,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0041"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0041.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":19,
+        "Spelling_accuracy":66,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0042"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0042.hocr"
     },
     {
         "Average_confidence":50,
@@ -350,7 +361,7 @@
         "Full_text_length":62,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0043"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0043.hocr"
     },
     {
         "Average_confidence":57,
@@ -358,7 +369,7 @@
         "Full_text_length":67,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0044"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0044.hocr"
     },
     {
         "Average_confidence":95,
@@ -366,7 +377,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0045"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0045.hocr"
     },
     {
         "Average_confidence":53,
@@ -374,7 +385,7 @@
         "Full_text_length":16,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0046"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0046.hocr"
     },
     {
         "Average_confidence":52,
@@ -382,7 +393,7 @@
         "Full_text_length":495,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0047"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0047.hocr"
     },
     {
         "Average_confidence":95,
@@ -390,15 +401,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0048"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0048.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":64,
+        "Spelling_accuracy":78,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0049"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0049.hocr"
     },
     {
         "Average_confidence":49,
@@ -406,7 +418,7 @@
         "Full_text_length":473,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0050"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0050.hocr"
     },
     {
         "Average_confidence":95,
@@ -414,7 +426,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0051"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0051.hocr"
     },
     {
         "Average_confidence":54,
@@ -422,7 +434,7 @@
         "Full_text_length":1336,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0052"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0052.hocr"
     },
     {
         "Average_confidence":52,
@@ -430,7 +442,7 @@
         "Full_text_length":733,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0053"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0053.hocr"
     },
     {
         "Average_confidence":58,
@@ -438,7 +450,7 @@
         "Full_text_length":38,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0054"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0054.hocr"
     },
     {
         "Average_confidence":50,
@@ -446,7 +458,7 @@
         "Full_text_length":262,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0055"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0055.hocr"
     },
     {
         "Average_confidence":57,
@@ -454,7 +466,7 @@
         "Full_text_length":40,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0056"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0056.hocr"
     },
     {
         "Average_confidence":95,
@@ -462,7 +474,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0057"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0057.hocr"
     },
     {
         "Average_confidence":59,
@@ -470,7 +482,7 @@
         "Full_text_length":53,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0058"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0058.hocr"
     },
     {
         "Average_confidence":55,
@@ -478,7 +490,7 @@
         "Full_text_length":71,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0059"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0059.hocr"
     },
     {
         "Average_confidence":53,
@@ -486,7 +498,7 @@
         "Full_text_length":28,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0060"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0060.hocr"
     },
     {
         "Average_confidence":48,
@@ -494,7 +506,7 @@
         "Full_text_length":85,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0061"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0061.hocr"
     },
     {
         "Average_confidence":77,
@@ -502,7 +514,7 @@
         "Full_text_length":7,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0062"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0062.hocr"
     },
     {
         "Average_confidence":51,
@@ -510,7 +522,7 @@
         "Full_text_length":853,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0063"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0063.hocr"
     },
     {
         "Average_confidence":95,
@@ -518,7 +530,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0064"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0064.hocr"
     },
     {
         "Average_confidence":49,
@@ -526,7 +538,7 @@
         "Full_text_length":137,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0065"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0065.hocr"
     },
     {
         "Average_confidence":54,
@@ -534,7 +546,7 @@
         "Full_text_length":56,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0066"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0066.hocr"
     },
     {
         "Average_confidence":55,
@@ -542,7 +554,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0067"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0067.hocr"
     },
     {
         "Average_confidence":46,
@@ -550,7 +562,7 @@
         "Full_text_length":56,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0068"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0068.hocr"
     },
     {
         "Average_confidence":95,
@@ -558,15 +570,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0069"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0069.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":53,
+        "Spelling_accuracy":76,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0070"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0070.hocr"
     },
     {
         "Average_confidence":95,
@@ -574,7 +587,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0071"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0071.hocr"
     },
     {
         "Average_confidence":45,
@@ -582,7 +595,7 @@
         "Full_text_length":537,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0072"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0072.hocr"
     },
     {
         "Average_confidence":61,
@@ -590,9 +603,10 @@
             "ORG":"1"
         },
         "Full_text_length":40,
+        "Spelling_accuracy":40,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0073"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0073.hocr"
     },
     {
         "Average_confidence":52,
@@ -600,7 +614,7 @@
         "Full_text_length":59,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0074"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0074.hocr"
     },
     {
         "Average_confidence":95,
@@ -608,7 +622,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0075"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0075.hocr"
     },
     {
         "Average_confidence":59,
@@ -616,7 +630,7 @@
         "Full_text_length":722,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0076"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0076.hocr"
     },
     {
         "Average_confidence":52,
@@ -624,7 +638,7 @@
         "Full_text_length":143,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0077"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0077.hocr"
     },
     {
         "Average_confidence":55,
@@ -632,7 +646,7 @@
         "Full_text_length":83,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0078"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0078.hocr"
     },
     {
         "Average_confidence":49,
@@ -640,7 +654,7 @@
         "Full_text_length":70,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0079"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0079.hocr"
     },
     {
         "Average_confidence":95,
@@ -648,7 +662,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0080"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0080.hocr"
     },
     {
         "Average_confidence":95,
@@ -656,7 +670,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0081"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0081.hocr"
     },
     {
         "Average_confidence":56,
@@ -664,7 +678,7 @@
         "Full_text_length":17,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0082"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0082.hocr"
     },
     {
         "Average_confidence":95,
@@ -672,7 +686,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0083"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0083.hocr"
     },
     {
         "Average_confidence":55,
@@ -680,7 +694,7 @@
         "Full_text_length":56,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0084"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0084.hocr"
     },
     {
         "Average_confidence":95,
@@ -688,7 +702,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0085"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0085.hocr"
     },
     {
         "Average_confidence":52,
@@ -696,7 +710,7 @@
         "Full_text_length":33,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0086"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0086.hocr"
     },
     {
         "Average_confidence":43,
@@ -704,7 +718,7 @@
         "Full_text_length":252,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0087"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0087.hocr"
     },
     {
         "Average_confidence":95,
@@ -712,7 +726,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0088"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0088.hocr"
     },
     {
         "Average_confidence":51,
@@ -720,15 +734,16 @@
         "Full_text_length":52,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0089"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0089.hocr"
     },
     {
         "Average_confidence":75,
         "Entity_stats":{},
         "Full_text_length":59,
+        "Spelling_accuracy":70,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0090"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0090.hocr"
     },
     {
         "Average_confidence":66,
@@ -737,9 +752,10 @@
             "PERSON":"1"
         },
         "Full_text_length":602,
+        "Spelling_accuracy":67,
         "Total_entities_found":8,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0091"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0091.hocr"
     },
     {
         "Average_confidence":69,
@@ -747,9 +763,10 @@
             "DATE":"1"
         },
         "Full_text_length":74,
+        "Spelling_accuracy":58,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0092"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0092.hocr"
     },
     {
         "Average_confidence":67,
@@ -757,9 +774,10 @@
             "DATE":"1"
         },
         "Full_text_length":542,
+        "Spelling_accuracy":76,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0093"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0093.hocr"
     },
     {
         "Average_confidence":95,
@@ -767,7 +785,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0094"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0094.hocr"
     },
     {
         "Average_confidence":54,
@@ -775,7 +793,7 @@
         "Full_text_length":114,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0095"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0095.hocr"
     },
     {
         "Average_confidence":52,
@@ -783,7 +801,7 @@
         "Full_text_length":68,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0096"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0096.hocr"
     },
     {
         "Average_confidence":53,
@@ -791,7 +809,7 @@
         "Full_text_length":762,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0097"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0097.hocr"
     },
     {
         "Average_confidence":50,
@@ -799,7 +817,7 @@
         "Full_text_length":231,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0098"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0098.hocr"
     },
     {
         "Average_confidence":53,
@@ -807,7 +825,7 @@
         "Full_text_length":42,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0099"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0099.hocr"
     },
     {
         "Average_confidence":52,
@@ -815,7 +833,7 @@
         "Full_text_length":47,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0100"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0100.hocr"
     },
     {
         "Average_confidence":95,
@@ -823,7 +841,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0101"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0101.hocr"
     },
     {
         "Average_confidence":48,
@@ -831,7 +849,7 @@
         "Full_text_length":416,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0102"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0102.hocr"
     },
     {
         "Average_confidence":53,
@@ -839,7 +857,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0103"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0103.hocr"
     },
     {
         "Average_confidence":51,
@@ -847,7 +865,7 @@
         "Full_text_length":58,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0104"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0104.hocr"
     },
     {
         "Average_confidence":47,
@@ -855,7 +873,7 @@
         "Full_text_length":293,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0105"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0105.hocr"
     },
     {
         "Average_confidence":95,
@@ -863,7 +881,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0106"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0106.hocr"
     },
     {
         "Average_confidence":95,
@@ -871,7 +889,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0107"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0107.hocr"
     },
     {
         "Average_confidence":52,
@@ -879,7 +897,7 @@
         "Full_text_length":48,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0108"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0108.hocr"
     },
     {
         "Average_confidence":95,
@@ -887,7 +905,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0109"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0109.hocr"
     },
     {
         "Average_confidence":48,
@@ -895,7 +913,7 @@
         "Full_text_length":73,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0110"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0110.hocr"
     },
     {
         "Average_confidence":95,
@@ -903,7 +921,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0111"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0111.hocr"
     },
     {
         "Average_confidence":95,
@@ -911,7 +929,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0112"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0112.hocr"
     },
     {
         "Average_confidence":95,
@@ -919,7 +937,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0113"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0113.hocr"
     },
     {
         "Average_confidence":44,
@@ -927,7 +945,7 @@
         "Full_text_length":65,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0114"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0114.hocr"
     },
     {
         "Average_confidence":53,
@@ -935,7 +953,7 @@
         "Full_text_length":33,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0115"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0115.hocr"
     },
     {
         "Average_confidence":95,
@@ -943,7 +961,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0116"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0116.hocr"
     },
     {
         "Average_confidence":54,
@@ -951,7 +969,7 @@
         "Full_text_length":94,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0117"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0117.hocr"
     },
     {
         "Average_confidence":95,
@@ -959,7 +977,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0118"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0118.hocr"
     },
     {
         "Average_confidence":57,
@@ -967,7 +985,7 @@
         "Full_text_length":41,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0119"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0119.hocr"
     },
     {
         "Average_confidence":54,
@@ -975,7 +993,7 @@
         "Full_text_length":401,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0120"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0120.hocr"
     },
     {
         "Average_confidence":95,
@@ -983,7 +1001,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0121"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0121.hocr"
     },
     {
         "Average_confidence":50,
@@ -991,7 +1009,7 @@
         "Full_text_length":1190,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0122"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0122.hocr"
     },
     {
         "Average_confidence":49,
@@ -999,7 +1017,7 @@
         "Full_text_length":1242,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0123"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0123.hocr"
     },
     {
         "Average_confidence":51,
@@ -1007,7 +1025,7 @@
         "Full_text_length":1299,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0124"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0124.hocr"
     },
     {
         "Average_confidence":58,
@@ -1015,7 +1033,7 @@
         "Full_text_length":22,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0125"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0125.hocr"
     },
     {
         "Average_confidence":56,
@@ -1023,15 +1041,16 @@
         "Full_text_length":864,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0126"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0126.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":61,
+        "Spelling_accuracy":55,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0127"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0127.hocr"
     },
     {
         "Average_confidence":53,
@@ -1039,7 +1058,7 @@
         "Full_text_length":408,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0128"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0128.hocr"
     },
     {
         "Average_confidence":52,
@@ -1047,7 +1066,7 @@
         "Full_text_length":90,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0129"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0129.hocr"
     },
     {
         "Average_confidence":57,
@@ -1055,7 +1074,7 @@
         "Full_text_length":626,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0130"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0130.hocr"
     },
     {
         "Average_confidence":53,
@@ -1063,7 +1082,7 @@
         "Full_text_length":206,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0131"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0131.hocr"
     },
     {
         "Average_confidence":56,
@@ -1071,7 +1090,7 @@
         "Full_text_length":805,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0132"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0132.hocr"
     },
     {
         "Average_confidence":49,
@@ -1079,7 +1098,7 @@
         "Full_text_length":50,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0133"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0133.hocr"
     },
     {
         "Average_confidence":51,
@@ -1087,15 +1106,16 @@
         "Full_text_length":227,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0134"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0134.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":497,
+        "Spelling_accuracy":83,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0135"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0135.hocr"
     },
     {
         "Average_confidence":54,
@@ -1103,7 +1123,7 @@
         "Full_text_length":26,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0136"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0136.hocr"
     },
     {
         "Average_confidence":56,
@@ -1111,7 +1131,7 @@
         "Full_text_length":424,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0137"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0137.hocr"
     },
     {
         "Average_confidence":55,
@@ -1119,7 +1139,7 @@
         "Full_text_length":221,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0138"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0138.hocr"
     },
     {
         "Average_confidence":57,
@@ -1127,7 +1147,7 @@
         "Full_text_length":318,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0139"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0139.hocr"
     },
     {
         "Average_confidence":54,
@@ -1135,7 +1155,7 @@
         "Full_text_length":76,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0140"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0140.hocr"
     },
     {
         "Average_confidence":60,
@@ -1143,9 +1163,10 @@
             "ORG":"1"
         },
         "Full_text_length":182,
+        "Spelling_accuracy":58,
         "Total_entities_found":5,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0141"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0141.hocr"
     },
     {
         "Average_confidence":50,
@@ -1153,7 +1174,7 @@
         "Full_text_length":60,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0142"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0142.hocr"
     },
     {
         "Average_confidence":58,
@@ -1161,15 +1182,16 @@
         "Full_text_length":1218,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0143"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0143.hocr"
     },
     {
         "Average_confidence":63,
         "Entity_stats":{},
         "Full_text_length":48,
+        "Spelling_accuracy":90,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0144"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0144.hocr"
     },
     {
         "Average_confidence":55,
@@ -1177,7 +1199,7 @@
         "Full_text_length":1024,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0145"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0145.hocr"
     },
     {
         "Average_confidence":51,
@@ -1185,7 +1207,7 @@
         "Full_text_length":206,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0146"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0146.hocr"
     },
     {
         "Average_confidence":47,
@@ -1193,15 +1215,16 @@
         "Full_text_length":431,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0147"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0147.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":55,
+        "Spelling_accuracy":93,
         "Total_entities_found":4,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0148"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0148.hocr"
     },
     {
         "Average_confidence":57,
@@ -1209,7 +1232,7 @@
         "Full_text_length":643,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0149"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0149.hocr"
     },
     {
         "Average_confidence":95,
@@ -1217,7 +1240,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0150"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0150.hocr"
     },
     {
         "Average_confidence":55,
@@ -1225,7 +1248,7 @@
         "Full_text_length":464,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0151"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0151.hocr"
     },
     {
         "Average_confidence":52,
@@ -1233,7 +1256,7 @@
         "Full_text_length":81,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0152"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0152.hocr"
     },
     {
         "Average_confidence":49,
@@ -1241,7 +1264,7 @@
         "Full_text_length":403,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0153"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0153.hocr"
     },
     {
         "Average_confidence":53,
@@ -1249,7 +1272,7 @@
         "Full_text_length":137,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0154"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0154.hocr"
     },
     {
         "Average_confidence":56,
@@ -1257,7 +1280,7 @@
         "Full_text_length":520,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0155"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0155.hocr"
     },
     {
         "Average_confidence":57,
@@ -1265,7 +1288,7 @@
         "Full_text_length":97,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0156"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0156.hocr"
     },
     {
         "Average_confidence":51,
@@ -1273,7 +1296,7 @@
         "Full_text_length":1284,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0157"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0157.hocr"
     },
     {
         "Average_confidence":50,
@@ -1281,7 +1304,7 @@
         "Full_text_length":716,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0158"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0158.hocr"
     },
     {
         "Average_confidence":53,
@@ -1289,7 +1312,7 @@
         "Full_text_length":235,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0159"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0159.hocr"
     },
     {
         "Average_confidence":55,
@@ -1297,7 +1320,7 @@
         "Full_text_length":1413,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0160"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0160.hocr"
     },
     {
         "Average_confidence":51,
@@ -1305,15 +1328,16 @@
         "Full_text_length":408,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0161"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0161.hocr"
     },
     {
         "Average_confidence":74,
         "Entity_stats":{},
         "Full_text_length":47,
+        "Spelling_accuracy":100,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0162"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0162.hocr"
     },
     {
         "Average_confidence":53,
@@ -1321,7 +1345,7 @@
         "Full_text_length":146,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0163"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0163.hocr"
     },
     {
         "Average_confidence":61,
@@ -1329,9 +1353,10 @@
             "LAW":"1"
         },
         "Full_text_length":656,
+        "Spelling_accuracy":83,
         "Total_entities_found":14,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0164"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0164.hocr"
     },
     {
         "Average_confidence":50,
@@ -1339,7 +1364,7 @@
         "Full_text_length":257,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0165"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0165.hocr"
     },
     {
         "Average_confidence":53,
@@ -1347,7 +1372,7 @@
         "Full_text_length":1286,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0166"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0166.hocr"
     },
     {
         "Average_confidence":56,
@@ -1355,7 +1380,7 @@
         "Full_text_length":365,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0167"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0167.hocr"
     },
     {
         "Average_confidence":95,
@@ -1363,7 +1388,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0168"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0168.hocr"
     },
     {
         "Average_confidence":48,
@@ -1371,15 +1396,16 @@
         "Full_text_length":806,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0169"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0169.hocr"
     },
     {
         "Average_confidence":85,
         "Entity_stats":{},
         "Full_text_length":12,
+        "Spelling_accuracy":66,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0170"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0170.hocr"
     },
     {
         "Average_confidence":68,
@@ -1388,9 +1414,10 @@
             "ORG":"1"
         },
         "Full_text_length":449,
+        "Spelling_accuracy":78,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0171"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0171.hocr"
     },
     {
         "Average_confidence":63,
@@ -1399,9 +1426,10 @@
             "PERSON":"1"
         },
         "Full_text_length":66,
+        "Spelling_accuracy":63,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0172"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0172.hocr"
     },
     {
         "Average_confidence":61,
@@ -1413,9 +1441,10 @@
             "PRODUCT":"1"
         },
         "Full_text_length":1179,
+        "Spelling_accuracy":81,
         "Total_entities_found":17,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0173"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0173.hocr"
     },
     {
         "Average_confidence":71,
@@ -1423,9 +1452,10 @@
             "DATE":"1"
         },
         "Full_text_length":56,
+        "Spelling_accuracy":94,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0174"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0174.hocr"
     },
     {
         "Average_confidence":66,
@@ -1433,9 +1463,10 @@
             "PERSON":"2"
         },
         "Full_text_length":608,
+        "Spelling_accuracy":84,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0175"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0175.hocr"
     },
     {
         "Average_confidence":95,
@@ -1443,15 +1474,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0176"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0176.hocr"
     },
     {
         "Average_confidence":67,
         "Entity_stats":{},
         "Full_text_length":572,
+        "Spelling_accuracy":82,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0177"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0177.hocr"
     },
     {
         "Average_confidence":60,
@@ -1459,9 +1491,10 @@
             "DATE":"1"
         },
         "Full_text_length":59,
+        "Spelling_accuracy":50,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0178"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0178.hocr"
     },
     {
         "Average_confidence":63,
@@ -1469,9 +1502,10 @@
             "DATE":"2"
         },
         "Full_text_length":901,
+        "Spelling_accuracy":80,
         "Total_entities_found":14,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0179"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0179.hocr"
     },
     {
         "Average_confidence":48,
@@ -1479,7 +1513,7 @@
         "Full_text_length":79,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0180"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0180.hocr"
     },
     {
         "Average_confidence":57,
@@ -1487,7 +1521,7 @@
         "Full_text_length":787,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0181"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0181.hocr"
     },
     {
         "Average_confidence":95,
@@ -1495,7 +1529,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0182"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0182.hocr"
     },
     {
         "Average_confidence":61,
@@ -1505,9 +1539,10 @@
             "PERSON":"1"
         },
         "Full_text_length":947,
+        "Spelling_accuracy":82,
         "Total_entities_found":24,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0183"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0183.hocr"
     },
     {
         "Average_confidence":95,
@@ -1515,7 +1550,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0184"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0184.hocr"
     },
     {
         "Average_confidence":95,
@@ -1523,7 +1558,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0185"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0185.hocr"
     },
     {
         "Average_confidence":61,
@@ -1531,9 +1566,10 @@
             "ORG":"1"
         },
         "Full_text_length":699,
+        "Spelling_accuracy":61,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0186"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0186.hocr"
     },
     {
         "Average_confidence":95,
@@ -1541,7 +1577,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0187"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0187.hocr"
     },
     {
         "Average_confidence":62,
@@ -1550,9 +1586,10 @@
             "PERSON":"1"
         },
         "Full_text_length":612,
+        "Spelling_accuracy":66,
         "Total_entities_found":8,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0188"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0188.hocr"
     },
     {
         "Average_confidence":95,
@@ -1560,7 +1597,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0189"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0189.hocr"
     },
     {
         "Average_confidence":64,
@@ -1570,9 +1607,10 @@
             "WORK_OF_ART":"1"
         },
         "Full_text_length":732,
+        "Spelling_accuracy":71,
         "Total_entities_found":10,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0190"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0190.hocr"
     },
     {
         "Average_confidence":65,
@@ -1582,17 +1620,19 @@
             "WORK_OF_ART":"1"
         },
         "Full_text_length":408,
+        "Spelling_accuracy":85,
         "Total_entities_found":5,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0191"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0191.hocr"
     },
     {
         "Average_confidence":68,
         "Entity_stats":{},
         "Full_text_length":213,
+        "Spelling_accuracy":89,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0192"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0192.hocr"
     },
     {
         "Average_confidence":95,
@@ -1600,7 +1640,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0193"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0193.hocr"
     },
     {
         "Average_confidence":59,
@@ -1608,7 +1648,7 @@
         "Full_text_length":1245,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0194"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0194.hocr"
     },
     {
         "Average_confidence":62,
@@ -1617,9 +1657,10 @@
             "NORP":"1"
         },
         "Full_text_length":707,
+        "Spelling_accuracy":86,
         "Total_entities_found":16,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0195"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0195.hocr"
     },
     {
         "Average_confidence":53,
@@ -1627,7 +1668,7 @@
         "Full_text_length":105,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0196"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0196.hocr"
     },
     {
         "Average_confidence":59,
@@ -1635,15 +1676,16 @@
         "Full_text_length":1385,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0197"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0197.hocr"
     },
     {
         "Average_confidence":70,
         "Entity_stats":{},
         "Full_text_length":152,
+        "Spelling_accuracy":65,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0198"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0198.hocr"
     },
     {
         "Average_confidence":95,
@@ -1651,7 +1693,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0199"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0199.hocr"
     },
     {
         "Average_confidence":95,
@@ -1659,7 +1701,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0200"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0200.hocr"
     },
     {
         "Average_confidence":58,
@@ -1667,7 +1709,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0201"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0201.hocr"
     },
     {
         "Average_confidence":95,
@@ -1675,7 +1717,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0202"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0202.hocr"
     },
     {
         "Average_confidence":95,
@@ -1683,7 +1725,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0203"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0203.hocr"
     },
     {
         "Average_confidence":95,
@@ -1691,7 +1733,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0204"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0204.hocr"
     },
     {
         "Average_confidence":55,
@@ -1699,7 +1741,7 @@
         "Full_text_length":964,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0205"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0205.hocr"
     },
     {
         "Average_confidence":53,
@@ -1707,7 +1749,7 @@
         "Full_text_length":1174,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0206"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0206.hocr"
     },
     {
         "Average_confidence":95,
@@ -1715,7 +1757,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0207"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0207.hocr"
     },
     {
         "Average_confidence":95,
@@ -1723,15 +1765,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0208"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0208.hocr"
     },
     {
         "Average_confidence":62,
         "Entity_stats":{},
         "Full_text_length":35,
+        "Spelling_accuracy":88,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0209"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0209.hocr"
     },
     {
         "Average_confidence":56,
@@ -1739,7 +1782,7 @@
         "Full_text_length":43,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0210"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0210.hocr"
     },
     {
         "Average_confidence":95,
@@ -1747,7 +1790,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0211"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0211.hocr"
     },
     {
         "Average_confidence":95,
@@ -1755,7 +1798,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0212"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0212.hocr"
     },
     {
         "Average_confidence":48,
@@ -1763,7 +1806,7 @@
         "Full_text_length":143,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0213"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0213.hocr"
     },
     {
         "Average_confidence":48,
@@ -1771,7 +1814,7 @@
         "Full_text_length":104,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0214"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0214.hocr"
     },
     {
         "Average_confidence":55,
@@ -1779,7 +1822,7 @@
         "Full_text_length":45,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0215"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0215.hocr"
     },
     {
         "Average_confidence":95,
@@ -1787,7 +1830,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0216"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0216.hocr"
     },
     {
         "Average_confidence":95,
@@ -1795,7 +1838,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0217"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0217.hocr"
     },
     {
         "Average_confidence":51,
@@ -1803,7 +1846,7 @@
         "Full_text_length":334,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0218"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0218.hocr"
     },
     {
         "Average_confidence":53,
@@ -1811,7 +1854,7 @@
         "Full_text_length":157,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0219"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0219.hocr"
     },
     {
         "Average_confidence":54,
@@ -1819,7 +1862,7 @@
         "Full_text_length":42,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0220"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0220.hocr"
     },
     {
         "Average_confidence":49,
@@ -1827,15 +1870,16 @@
         "Full_text_length":144,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0221"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0221.hocr"
     },
     {
         "Average_confidence":63,
         "Entity_stats":{},
         "Full_text_length":105,
+        "Spelling_accuracy":75,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0222"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0222.hocr"
     },
     {
         "Average_confidence":52,
@@ -1843,7 +1887,7 @@
         "Full_text_length":179,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0223"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0223.hocr"
     },
     {
         "Average_confidence":55,
@@ -1851,7 +1895,7 @@
         "Full_text_length":37,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0224"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0224.hocr"
     },
     {
         "Average_confidence":95,
@@ -1859,7 +1903,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0225"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0225.hocr"
     },
     {
         "Average_confidence":50,
@@ -1867,7 +1911,7 @@
         "Full_text_length":39,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0226"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0226.hocr"
     },
     {
         "Average_confidence":57,
@@ -1875,7 +1919,7 @@
         "Full_text_length":65,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0227"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0227.hocr"
     },
     {
         "Average_confidence":58,
@@ -1883,7 +1927,7 @@
         "Full_text_length":28,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0228"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0228.hocr"
     },
     {
         "Average_confidence":95,
@@ -1891,7 +1935,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0229"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0229.hocr"
     },
     {
         "Average_confidence":68,
@@ -1902,9 +1946,10 @@
             "PERSON":"2"
         },
         "Full_text_length":497,
+        "Spelling_accuracy":77,
         "Total_entities_found":12,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0230"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0230.hocr"
     },
     {
         "Average_confidence":95,
@@ -1912,7 +1957,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0231"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0231.hocr"
     },
     {
         "Average_confidence":64,
@@ -1920,9 +1965,10 @@
             "PRODUCT":"1"
         },
         "Full_text_length":467,
+        "Spelling_accuracy":76,
         "Total_entities_found":10,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0232"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0232.hocr"
     },
     {
         "Average_confidence":95,
@@ -1930,7 +1976,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0233"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0233.hocr"
     },
     {
         "Average_confidence":65,
@@ -1938,17 +1984,19 @@
             "ORG":"1"
         },
         "Full_text_length":516,
+        "Spelling_accuracy":79,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0234"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0234.hocr"
     },
     {
         "Average_confidence":63,
         "Entity_stats":{},
         "Full_text_length":36,
+        "Spelling_accuracy":57,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0235"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0235.hocr"
     },
     {
         "Average_confidence":68,
@@ -1958,17 +2006,19 @@
             "PERSON":"1"
         },
         "Full_text_length":699,
+        "Spelling_accuracy":81,
         "Total_entities_found":11,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0236"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0236.hocr"
     },
     {
         "Average_confidence":80,
         "Entity_stats":{},
         "Full_text_length":47,
+        "Spelling_accuracy":85,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0237"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0237.hocr"
     },
     {
         "Average_confidence":53,
@@ -1976,7 +2026,7 @@
         "Full_text_length":108,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0238"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0238.hocr"
     },
     {
         "Average_confidence":58,
@@ -1984,7 +2034,7 @@
         "Full_text_length":237,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0239"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0239.hocr"
     },
     {
         "Average_confidence":59,
@@ -1992,7 +2042,7 @@
         "Full_text_length":235,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0240"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0240.hocr"
     },
     {
         "Average_confidence":58,
@@ -2000,7 +2050,7 @@
         "Full_text_length":38,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0241"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0241.hocr"
     },
     {
         "Average_confidence":48,
@@ -2008,15 +2058,16 @@
         "Full_text_length":662,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0242"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0242.hocr"
     },
     {
         "Average_confidence":60,
         "Entity_stats":{},
         "Full_text_length":42,
+        "Spelling_accuracy":100,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0243"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0243.hocr"
     },
     {
         "Average_confidence":54,
@@ -2024,7 +2075,7 @@
         "Full_text_length":674,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0244"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0244.hocr"
     },
     {
         "Average_confidence":54,
@@ -2032,7 +2083,7 @@
         "Full_text_length":64,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0245"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0245.hocr"
     },
     {
         "Average_confidence":47,
@@ -2040,7 +2091,7 @@
         "Full_text_length":1197,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0246"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0246.hocr"
     },
     {
         "Average_confidence":95,
@@ -2048,7 +2099,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0247"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0247.hocr"
     },
     {
         "Average_confidence":50,
@@ -2056,15 +2107,16 @@
         "Full_text_length":308,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0248"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0248.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":20,
+        "Spelling_accuracy":50,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0249"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0249.hocr"
     },
     {
         "Average_confidence":52,
@@ -2072,7 +2124,7 @@
         "Full_text_length":404,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0250"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0250.hocr"
     },
     {
         "Average_confidence":51,
@@ -2080,7 +2132,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0251"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0251.hocr"
     },
     {
         "Average_confidence":50,
@@ -2088,7 +2140,7 @@
         "Full_text_length":228,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0252"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0252.hocr"
     },
     {
         "Average_confidence":54,
@@ -2096,7 +2148,7 @@
         "Full_text_length":113,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0253"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0253.hocr"
     },
     {
         "Average_confidence":55,
@@ -2104,7 +2156,7 @@
         "Full_text_length":165,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0254"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0254.hocr"
     },
     {
         "Average_confidence":55,
@@ -2112,7 +2164,7 @@
         "Full_text_length":111,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0255"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0255.hocr"
     },
     {
         "Average_confidence":66,
@@ -2121,9 +2173,10 @@
             "PERSON":"1"
         },
         "Full_text_length":131,
+        "Spelling_accuracy":82,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0256"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0256.hocr"
     },
     {
         "Average_confidence":95,
@@ -2131,7 +2184,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0257"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0257.hocr"
     },
     {
         "Average_confidence":56,
@@ -2139,7 +2192,7 @@
         "Full_text_length":1143,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0258"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0258.hocr"
     },
     {
         "Average_confidence":55,
@@ -2147,7 +2200,7 @@
         "Full_text_length":1290,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0259"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0259.hocr"
     },
     {
         "Average_confidence":55,
@@ -2155,7 +2208,7 @@
         "Full_text_length":1384,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0260"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0260.hocr"
     },
     {
         "Average_confidence":49,
@@ -2163,7 +2216,7 @@
         "Full_text_length":39,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0261"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0261.hocr"
     },
     {
         "Average_confidence":52,
@@ -2171,7 +2224,7 @@
         "Full_text_length":163,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0262"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0262.hocr"
     },
     {
         "Average_confidence":95,
@@ -2179,7 +2232,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0263"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0263.hocr"
     },
     {
         "Average_confidence":53,
@@ -2187,7 +2240,7 @@
         "Full_text_length":666,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0264"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0264.hocr"
     },
     {
         "Average_confidence":64,
@@ -2195,9 +2248,10 @@
             "DATE":"1"
         },
         "Full_text_length":126,
+        "Spelling_accuracy":77,
         "Total_entities_found":4,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0265"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0265.hocr"
     },
     {
         "Average_confidence":50,
@@ -2205,7 +2259,7 @@
         "Full_text_length":41,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0266"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0266.hocr"
     },
     {
         "Average_confidence":49,
@@ -2213,15 +2267,16 @@
         "Full_text_length":264,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0267"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0267.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":42,
+        "Spelling_accuracy":92,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0268"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0268.hocr"
     },
     {
         "Average_confidence":58,
@@ -2229,15 +2284,16 @@
         "Full_text_length":429,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0269"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0269.hocr"
     },
     {
         "Average_confidence":72,
         "Entity_stats":{},
         "Full_text_length":28,
+        "Spelling_accuracy":33,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0270"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0270.hocr"
     },
     {
         "Average_confidence":52,
@@ -2245,7 +2301,7 @@
         "Full_text_length":518,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0271"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0271.hocr"
     },
     {
         "Average_confidence":95,
@@ -2253,7 +2309,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0272"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0272.hocr"
     },
     {
         "Average_confidence":95,
@@ -2261,7 +2317,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0273"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0273.hocr"
     },
     {
         "Average_confidence":95,
@@ -2269,7 +2325,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0274"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0274.hocr"
     },
     {
         "Average_confidence":53,
@@ -2277,7 +2333,7 @@
         "Full_text_length":115,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0275"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0275.hocr"
     },
     {
         "Average_confidence":56,
@@ -2285,7 +2341,7 @@
         "Full_text_length":252,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0276"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0276.hocr"
     },
     {
         "Average_confidence":54,
@@ -2293,7 +2349,7 @@
         "Full_text_length":23,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0277"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0277.hocr"
     },
     {
         "Average_confidence":95,
@@ -2301,7 +2357,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0278"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0278.hocr"
     },
     {
         "Average_confidence":58,
@@ -2309,7 +2365,7 @@
         "Full_text_length":39,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0279"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0279.hocr"
     },
     {
         "Average_confidence":50,
@@ -2317,7 +2373,7 @@
         "Full_text_length":64,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0280"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0280.hocr"
     },
     {
         "Average_confidence":49,
@@ -2325,7 +2381,7 @@
         "Full_text_length":167,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0281"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0281.hocr"
     },
     {
         "Average_confidence":40,
@@ -2333,7 +2389,7 @@
         "Full_text_length":42,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0282"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0282.hocr"
     },
     {
         "Average_confidence":46,
@@ -2341,7 +2397,7 @@
         "Full_text_length":161,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0283"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0283.hocr"
     },
     {
         "Average_confidence":55,
@@ -2349,7 +2405,7 @@
         "Full_text_length":32,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0284"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0284.hocr"
     },
     {
         "Average_confidence":95,
@@ -2357,7 +2413,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0285"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0285.hocr"
     },
     {
         "Average_confidence":59,
@@ -2365,7 +2421,7 @@
         "Full_text_length":32,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0286"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0286.hocr"
     },
     {
         "Average_confidence":95,
@@ -2373,7 +2429,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0287"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0287.hocr"
     },
     {
         "Average_confidence":69,
@@ -2381,9 +2437,10 @@
             "PERSON":"1"
         },
         "Full_text_length":65,
+        "Spelling_accuracy":53,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0288"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0288.hocr"
     },
     {
         "Average_confidence":95,
@@ -2391,7 +2448,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0289"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0289.hocr"
     },
     {
         "Average_confidence":95,
@@ -2399,7 +2456,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0290"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0290.hocr"
     },
     {
         "Average_confidence":63,
@@ -2409,9 +2466,10 @@
             "PERSON":"1"
         },
         "Full_text_length":471,
+        "Spelling_accuracy":56,
         "Total_entities_found":5,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0291"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0291.hocr"
     },
     {
         "Average_confidence":95,
@@ -2419,7 +2477,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0292"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0292.hocr"
     },
     {
         "Average_confidence":57,
@@ -2427,7 +2485,7 @@
         "Full_text_length":687,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0293"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0293.hocr"
     },
     {
         "Average_confidence":56,
@@ -2435,7 +2493,7 @@
         "Full_text_length":598,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0294"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0294.hocr"
     },
     {
         "Average_confidence":48,
@@ -2443,7 +2501,7 @@
         "Full_text_length":252,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0295"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0295.hocr"
     },
     {
         "Average_confidence":95,
@@ -2451,7 +2509,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0296"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0296.hocr"
     },
     {
         "Average_confidence":95,
@@ -2459,7 +2517,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0297"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0297.hocr"
     },
     {
         "Average_confidence":55,
@@ -2467,7 +2525,7 @@
         "Full_text_length":55,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0298"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0298.hocr"
     },
     {
         "Average_confidence":51,
@@ -2475,7 +2533,7 @@
         "Full_text_length":777,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0299"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0299.hocr"
     },
     {
         "Average_confidence":56,
@@ -2483,7 +2541,7 @@
         "Full_text_length":41,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0300"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0300.hocr"
     },
     {
         "Average_confidence":95,
@@ -2491,7 +2549,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0301"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0301.hocr"
     },
     {
         "Average_confidence":95,
@@ -2499,7 +2557,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0302"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0302.hocr"
     },
     {
         "Average_confidence":95,
@@ -2507,7 +2565,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0303"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0303.hocr"
     },
     {
         "Average_confidence":95,
@@ -2515,7 +2573,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0304"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0304.hocr"
     },
     {
         "Average_confidence":47,
@@ -2523,7 +2581,7 @@
         "Full_text_length":98,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0305"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0305.hocr"
     },
     {
         "Average_confidence":95,
@@ -2531,7 +2589,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0306"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0306.hocr"
     },
     {
         "Average_confidence":95,
@@ -2539,7 +2597,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0307"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0307.hocr"
     },
     {
         "Average_confidence":95,
@@ -2547,7 +2605,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0308"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0308.hocr"
     },
     {
         "Average_confidence":49,
@@ -2555,7 +2613,7 @@
         "Full_text_length":83,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0309"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0309.hocr"
     },
     {
         "Average_confidence":54,
@@ -2563,7 +2621,7 @@
         "Full_text_length":37,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0310"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0310.hocr"
     },
     {
         "Average_confidence":49,
@@ -2571,7 +2629,7 @@
         "Full_text_length":51,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0311"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0311.hocr"
     },
     {
         "Average_confidence":57,
@@ -2579,7 +2637,7 @@
         "Full_text_length":112,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0312"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0312.hocr"
     },
     {
         "Average_confidence":95,
@@ -2587,7 +2645,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0313"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0313.hocr"
     },
     {
         "Average_confidence":95,
@@ -2595,7 +2653,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0314"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0314.hocr"
     },
     {
         "Average_confidence":49,
@@ -2603,7 +2661,7 @@
         "Full_text_length":213,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0315"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0315.hocr"
     },
     {
         "Average_confidence":95,
@@ -2611,7 +2669,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0316"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0316.hocr"
     },
     {
         "Average_confidence":95,
@@ -2619,7 +2677,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0317"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0317.hocr"
     },
     {
         "Average_confidence":95,
@@ -2627,7 +2685,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0318"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0318.hocr"
     },
     {
         "Average_confidence":95,
@@ -2635,7 +2693,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0319"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0319.hocr"
     },
     {
         "Average_confidence":95,
@@ -2643,7 +2701,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0320"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0320.hocr"
     },
     {
         "Average_confidence":49,
@@ -2651,7 +2709,7 @@
         "Full_text_length":59,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0321"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0321.hocr"
     },
     {
         "Average_confidence":95,
@@ -2659,7 +2717,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0322"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0322.hocr"
     },
     {
         "Average_confidence":95,
@@ -2667,7 +2725,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0323"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0323.hocr"
     },
     {
         "Average_confidence":95,
@@ -2675,7 +2733,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0324"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0324.hocr"
     },
     {
         "Average_confidence":57,
@@ -2683,7 +2741,7 @@
         "Full_text_length":30,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0325"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0325.hocr"
     },
     {
         "Average_confidence":95,
@@ -2691,7 +2749,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0326"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0326.hocr"
     },
     {
         "Average_confidence":55,
@@ -2699,7 +2757,7 @@
         "Full_text_length":52,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0327"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0327.hocr"
     },
     {
         "Average_confidence":95,
@@ -2707,7 +2765,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0328"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0328.hocr"
     },
     {
         "Average_confidence":95,
@@ -2715,7 +2773,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0329"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0329.hocr"
     },
     {
         "Average_confidence":95,
@@ -2723,7 +2781,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0330"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0330.hocr"
     },
     {
         "Average_confidence":95,
@@ -2731,7 +2789,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0331"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0331.hocr"
     },
     {
         "Average_confidence":95,
@@ -2739,7 +2797,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0332"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0332.hocr"
     },
     {
         "Average_confidence":75,
@@ -2747,7 +2805,7 @@
         "Full_text_length":8,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0333"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0333.hocr"
     },
     {
         "Average_confidence":95,
@@ -2755,7 +2813,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0334"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0334.hocr"
     },
     {
         "Average_confidence":56,
@@ -2763,7 +2821,7 @@
         "Full_text_length":37,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0335"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0335.hocr"
     },
     {
         "Average_confidence":49,
@@ -2771,7 +2829,7 @@
         "Full_text_length":104,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0336"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0336.hocr"
     },
     {
         "Average_confidence":58,
@@ -2779,7 +2837,7 @@
         "Full_text_length":61,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0337"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0337.hocr"
     },
     {
         "Average_confidence":95,
@@ -2787,7 +2845,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0338"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0338.hocr"
     },
     {
         "Average_confidence":57,
@@ -2795,7 +2853,7 @@
         "Full_text_length":298,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0339"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0339.hocr"
     },
     {
         "Average_confidence":95,
@@ -2803,7 +2861,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0340"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0340.hocr"
     },
     {
         "Average_confidence":50,
@@ -2811,7 +2869,7 @@
         "Full_text_length":103,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0341"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0341.hocr"
     },
     {
         "Average_confidence":59,
@@ -2819,15 +2877,16 @@
         "Full_text_length":46,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0342"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0342.hocr"
     },
     {
         "Average_confidence":70,
         "Entity_stats":{},
         "Full_text_length":287,
+        "Spelling_accuracy":80,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0343"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0343.hocr"
     },
     {
         "Average_confidence":58,
@@ -2835,7 +2894,7 @@
         "Full_text_length":44,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0344"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0344.hocr"
     },
     {
         "Average_confidence":56,
@@ -2843,15 +2902,16 @@
         "Full_text_length":12,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0345"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0345.hocr"
     },
     {
         "Average_confidence":80,
         "Entity_stats":{},
         "Full_text_length":26,
+        "Spelling_accuracy":33,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0346"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0346.hocr"
     },
     {
         "Average_confidence":95,
@@ -2859,15 +2919,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0347"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0347.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":72,
+        "Spelling_accuracy":100,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0348"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0348.hocr"
     },
     {
         "Average_confidence":53,
@@ -2875,7 +2936,7 @@
         "Full_text_length":109,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0349"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0349.hocr"
     },
     {
         "Average_confidence":54,
@@ -2883,7 +2944,7 @@
         "Full_text_length":54,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0350"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0350.hocr"
     },
     {
         "Average_confidence":95,
@@ -2891,23 +2952,25 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0351"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0351.hocr"
     },
     {
         "Average_confidence":68,
         "Entity_stats":{},
         "Full_text_length":8,
+        "Spelling_accuracy":100,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0352"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0352.hocr"
     },
     {
         "Average_confidence":63,
         "Entity_stats":{},
         "Full_text_length":30,
+        "Spelling_accuracy":60,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0353"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0353.hocr"
     },
     {
         "Average_confidence":95,
@@ -2915,7 +2978,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0354"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0354.hocr"
     },
     {
         "Average_confidence":57,
@@ -2923,7 +2986,7 @@
         "Full_text_length":82,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0355"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0355.hocr"
     },
     {
         "Average_confidence":95,
@@ -2931,7 +2994,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0356"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0356.hocr"
     },
     {
         "Average_confidence":56,
@@ -2939,7 +3002,7 @@
         "Full_text_length":43,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0357"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0357.hocr"
     },
     {
         "Average_confidence":95,
@@ -2947,7 +3010,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0358"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0358.hocr"
     },
     {
         "Average_confidence":51,
@@ -2955,7 +3018,7 @@
         "Full_text_length":86,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0359"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0359.hocr"
     },
     {
         "Average_confidence":95,
@@ -2963,7 +3026,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0360"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0360.hocr"
     },
     {
         "Average_confidence":58,
@@ -2971,7 +3034,7 @@
         "Full_text_length":31,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0361"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0361.hocr"
     },
     {
         "Average_confidence":57,
@@ -2979,7 +3042,7 @@
         "Full_text_length":33,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0362"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0362.hocr"
     },
     {
         "Average_confidence":55,
@@ -2987,7 +3050,7 @@
         "Full_text_length":41,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0363"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0363.hocr"
     },
     {
         "Average_confidence":95,
@@ -2995,7 +3058,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0364"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0364.hocr"
     },
     {
         "Average_confidence":51,
@@ -3003,7 +3066,7 @@
         "Full_text_length":40,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0365"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0365.hocr"
     },
     {
         "Average_confidence":95,
@@ -3011,7 +3074,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0366"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0366.hocr"
     },
     {
         "Average_confidence":59,
@@ -3019,7 +3082,7 @@
         "Full_text_length":43,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0367"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0367.hocr"
     },
     {
         "Average_confidence":49,
@@ -3027,7 +3090,7 @@
         "Full_text_length":186,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0368"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0368.hocr"
     },
     {
         "Average_confidence":95,
@@ -3035,7 +3098,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0369"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0369.hocr"
     },
     {
         "Average_confidence":69,
@@ -3043,9 +3106,10 @@
             "PERSON":"1"
         },
         "Full_text_length":257,
+        "Spelling_accuracy":72,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0370"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0370.hocr"
     },
     {
         "Average_confidence":54,
@@ -3053,7 +3117,7 @@
         "Full_text_length":13,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0371"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0371.hocr"
     },
     {
         "Average_confidence":95,
@@ -3061,7 +3125,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0372"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0372.hocr"
     },
     {
         "Average_confidence":61,
@@ -3069,7 +3133,7 @@
         "Full_text_length":25,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0373"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0373.hocr"
     },
     {
         "Average_confidence":95,
@@ -3077,7 +3141,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0374"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0374.hocr"
     },
     {
         "Average_confidence":95,
@@ -3085,7 +3149,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0375"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0375.hocr"
     },
     {
         "Average_confidence":48,
@@ -3093,7 +3157,7 @@
         "Full_text_length":895,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0376"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0376.hocr"
     },
     {
         "Average_confidence":50,
@@ -3101,7 +3165,7 @@
         "Full_text_length":71,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0377"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0377.hocr"
     },
     {
         "Average_confidence":95,
@@ -3109,7 +3173,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0378"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0378.hocr"
     },
     {
         "Average_confidence":55,
@@ -3117,7 +3181,7 @@
         "Full_text_length":744,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0379"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0379.hocr"
     },
     {
         "Average_confidence":52,
@@ -3125,7 +3189,7 @@
         "Full_text_length":102,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0380"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0380.hocr"
     },
     {
         "Average_confidence":51,
@@ -3133,7 +3197,7 @@
         "Full_text_length":771,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0381"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0381.hocr"
     },
     {
         "Average_confidence":55,
@@ -3141,7 +3205,7 @@
         "Full_text_length":162,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0382"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0382.hocr"
     },
     {
         "Average_confidence":50,
@@ -3149,7 +3213,7 @@
         "Full_text_length":528,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0383"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0383.hocr"
     },
     {
         "Average_confidence":56,
@@ -3157,7 +3221,7 @@
         "Full_text_length":186,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0384"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0384.hocr"
     },
     {
         "Average_confidence":47,
@@ -3165,7 +3229,7 @@
         "Full_text_length":838,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0385"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0385.hocr"
     },
     {
         "Average_confidence":51,
@@ -3173,7 +3237,7 @@
         "Full_text_length":130,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0386"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0386.hocr"
     },
     {
         "Average_confidence":52,
@@ -3181,7 +3245,7 @@
         "Full_text_length":1079,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0387"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0387.hocr"
     },
     {
         "Average_confidence":53,
@@ -3189,7 +3253,7 @@
         "Full_text_length":380,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0388"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0388.hocr"
     },
     {
         "Average_confidence":61,
@@ -3197,9 +3261,10 @@
             "LAW":"1"
         },
         "Full_text_length":102,
+        "Spelling_accuracy":85,
         "Total_entities_found":5,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0389"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0389.hocr"
     },
     {
         "Average_confidence":49,
@@ -3207,7 +3272,7 @@
         "Full_text_length":644,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0390"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0390.hocr"
     },
     {
         "Average_confidence":49,
@@ -3215,7 +3280,7 @@
         "Full_text_length":553,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0391"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0391.hocr"
     },
     {
         "Average_confidence":53,
@@ -3223,7 +3288,7 @@
         "Full_text_length":464,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0392"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0392.hocr"
     },
     {
         "Average_confidence":95,
@@ -3231,7 +3296,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0393"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0393.hocr"
     },
     {
         "Average_confidence":48,
@@ -3239,7 +3304,7 @@
         "Full_text_length":606,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0394"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0394.hocr"
     },
     {
         "Average_confidence":95,
@@ -3247,7 +3312,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0395"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0395.hocr"
     },
     {
         "Average_confidence":53,
@@ -3255,7 +3320,7 @@
         "Full_text_length":711,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0396"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0396.hocr"
     },
     {
         "Average_confidence":95,
@@ -3263,7 +3328,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0397"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0397.hocr"
     },
     {
         "Average_confidence":52,
@@ -3271,7 +3336,7 @@
         "Full_text_length":363,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0398"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0398.hocr"
     },
     {
         "Average_confidence":95,
@@ -3279,7 +3344,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0399"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0399.hocr"
     },
     {
         "Average_confidence":53,
@@ -3287,7 +3352,7 @@
         "Full_text_length":783,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0400"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0400.hocr"
     },
     {
         "Average_confidence":95,
@@ -3295,7 +3360,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0401"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0401.hocr"
     },
     {
         "Average_confidence":53,
@@ -3303,7 +3368,7 @@
         "Full_text_length":373,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0402"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0402.hocr"
     },
     {
         "Average_confidence":53,
@@ -3311,7 +3376,7 @@
         "Full_text_length":188,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0403"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0403.hocr"
     },
     {
         "Average_confidence":56,
@@ -3319,7 +3384,7 @@
         "Full_text_length":466,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0404"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0404.hocr"
     },
     {
         "Average_confidence":55,
@@ -3327,15 +3392,16 @@
         "Full_text_length":173,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0405"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0405.hocr"
     },
     {
         "Average_confidence":61,
         "Entity_stats":{},
         "Full_text_length":26,
+        "Spelling_accuracy":33,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0406"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0406.hocr"
     },
     {
         "Average_confidence":50,
@@ -3343,7 +3409,7 @@
         "Full_text_length":156,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0407"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0407.hocr"
     },
     {
         "Average_confidence":59,
@@ -3351,7 +3417,7 @@
         "Full_text_length":67,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0408"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0408.hocr"
     },
     {
         "Average_confidence":51,
@@ -3359,7 +3425,7 @@
         "Full_text_length":216,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0409"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0409.hocr"
     },
     {
         "Average_confidence":51,
@@ -3367,7 +3433,7 @@
         "Full_text_length":208,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0410"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0410.hocr"
     },
     {
         "Average_confidence":47,
@@ -3375,7 +3441,7 @@
         "Full_text_length":220,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0411"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0411.hocr"
     },
     {
         "Average_confidence":53,
@@ -3383,7 +3449,7 @@
         "Full_text_length":37,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0412"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0412.hocr"
     },
     {
         "Average_confidence":54,
@@ -3391,7 +3457,7 @@
         "Full_text_length":445,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0413"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0413.hocr"
     },
     {
         "Average_confidence":95,
@@ -3399,7 +3465,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0414"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0414.hocr"
     },
     {
         "Average_confidence":54,
@@ -3407,7 +3473,7 @@
         "Full_text_length":440,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0415"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0415.hocr"
     },
     {
         "Average_confidence":95,
@@ -3415,7 +3481,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0416"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0416.hocr"
     },
     {
         "Average_confidence":53,
@@ -3423,7 +3489,7 @@
         "Full_text_length":78,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0417"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0417.hocr"
     },
     {
         "Average_confidence":95,
@@ -3431,7 +3497,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0418"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0418.hocr"
     },
     {
         "Average_confidence":54,
@@ -3439,7 +3505,7 @@
         "Full_text_length":297,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0419"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0419.hocr"
     },
     {
         "Average_confidence":95,
@@ -3447,7 +3513,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0420"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0420.hocr"
     },
     {
         "Average_confidence":50,
@@ -3455,7 +3521,7 @@
         "Full_text_length":246,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0421"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0421.hocr"
     },
     {
         "Average_confidence":52,
@@ -3463,7 +3529,7 @@
         "Full_text_length":108,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0422"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0422.hocr"
     },
     {
         "Average_confidence":61,
@@ -3473,9 +3539,10 @@
             "PRODUCT":"1"
         },
         "Full_text_length":575,
+        "Spelling_accuracy":83,
         "Total_entities_found":6,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0423"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0423.hocr"
     },
     {
         "Average_confidence":95,
@@ -3483,7 +3550,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0424"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0424.hocr"
     },
     {
         "Average_confidence":64,
@@ -3492,9 +3559,10 @@
             "PERSON":"1"
         },
         "Full_text_length":520,
+        "Spelling_accuracy":62,
         "Total_entities_found":5,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0425"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0425.hocr"
     },
     {
         "Average_confidence":49,
@@ -3502,7 +3570,7 @@
         "Full_text_length":59,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0426"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0426.hocr"
     },
     {
         "Average_confidence":54,
@@ -3510,7 +3578,7 @@
         "Full_text_length":367,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0427"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0427.hocr"
     },
     {
         "Average_confidence":52,
@@ -3518,7 +3586,7 @@
         "Full_text_length":75,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0428"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0428.hocr"
     },
     {
         "Average_confidence":48,
@@ -3526,7 +3594,7 @@
         "Full_text_length":720,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0429"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0429.hocr"
     },
     {
         "Average_confidence":45,
@@ -3534,7 +3602,7 @@
         "Full_text_length":130,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0430"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0430.hocr"
     },
     {
         "Average_confidence":53,
@@ -3542,7 +3610,7 @@
         "Full_text_length":986,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0431"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0431.hocr"
     },
     {
         "Average_confidence":51,
@@ -3550,7 +3618,7 @@
         "Full_text_length":149,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0432"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0432.hocr"
     },
     {
         "Average_confidence":59,
@@ -3558,7 +3626,7 @@
         "Full_text_length":257,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0433"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0433.hocr"
     },
     {
         "Average_confidence":95,
@@ -3566,7 +3634,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0434"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0434.hocr"
     },
     {
         "Average_confidence":50,
@@ -3574,7 +3642,7 @@
         "Full_text_length":1001,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0435"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0435.hocr"
     },
     {
         "Average_confidence":50,
@@ -3582,7 +3650,7 @@
         "Full_text_length":1048,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0436"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0436.hocr"
     },
     {
         "Average_confidence":95,
@@ -3590,7 +3658,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0437"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0437.hocr"
     },
     {
         "Average_confidence":51,
@@ -3598,7 +3666,7 @@
         "Full_text_length":1193,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0438"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0438.hocr"
     },
     {
         "Average_confidence":46,
@@ -3606,7 +3674,7 @@
         "Full_text_length":580,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0439"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0439.hocr"
     },
     {
         "Average_confidence":43,
@@ -3614,7 +3682,7 @@
         "Full_text_length":254,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0440"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0440.hocr"
     },
     {
         "Average_confidence":95,
@@ -3622,7 +3690,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0441"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0441.hocr"
     },
     {
         "Average_confidence":51,
@@ -3630,7 +3698,7 @@
         "Full_text_length":107,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0442"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0442.hocr"
     },
     {
         "Average_confidence":95,
@@ -3638,7 +3706,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0443"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0443.hocr"
     },
     {
         "Average_confidence":53,
@@ -3646,7 +3714,7 @@
         "Full_text_length":96,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0444"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0444.hocr"
     },
     {
         "Average_confidence":52,
@@ -3654,7 +3722,7 @@
         "Full_text_length":465,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0445"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0445.hocr"
     },
     {
         "Average_confidence":45,
@@ -3662,7 +3730,7 @@
         "Full_text_length":481,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0446"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0446.hocr"
     },
     {
         "Average_confidence":95,
@@ -3670,7 +3738,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0447"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0447.hocr"
     },
     {
         "Average_confidence":46,
@@ -3678,7 +3746,7 @@
         "Full_text_length":301,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0448"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0448.hocr"
     },
     {
         "Average_confidence":95,
@@ -3686,7 +3754,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0449"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0449.hocr"
     },
     {
         "Average_confidence":50,
@@ -3694,7 +3762,7 @@
         "Full_text_length":324,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0450"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0450.hocr"
     },
     {
         "Average_confidence":95,
@@ -3702,7 +3770,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0451"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0451.hocr"
     },
     {
         "Average_confidence":59,
@@ -3710,7 +3778,7 @@
         "Full_text_length":61,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0452"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0452.hocr"
     },
     {
         "Average_confidence":50,
@@ -3718,7 +3786,7 @@
         "Full_text_length":130,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0453"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0453.hocr"
     },
     {
         "Average_confidence":49,
@@ -3726,7 +3794,7 @@
         "Full_text_length":562,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0454"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0454.hocr"
     },
     {
         "Average_confidence":48,
@@ -3734,7 +3802,7 @@
         "Full_text_length":107,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0455"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0455.hocr"
     },
     {
         "Average_confidence":58,
@@ -3742,7 +3810,7 @@
         "Full_text_length":241,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0456"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0456.hocr"
     },
     {
         "Average_confidence":95,
@@ -3750,7 +3818,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0457"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0457.hocr"
     },
     {
         "Average_confidence":52,
@@ -3758,7 +3826,7 @@
         "Full_text_length":780,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0458"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0458.hocr"
     },
     {
         "Average_confidence":57,
@@ -3766,7 +3834,7 @@
         "Full_text_length":503,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0459"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0459.hocr"
     },
     {
         "Average_confidence":95,
@@ -3774,7 +3842,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0460"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0460.hocr"
     },
     {
         "Average_confidence":52,
@@ -3782,7 +3850,7 @@
         "Full_text_length":824,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0461"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0461.hocr"
     },
     {
         "Average_confidence":52,
@@ -3790,7 +3858,7 @@
         "Full_text_length":44,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0462"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0462.hocr"
     },
     {
         "Average_confidence":49,
@@ -3798,7 +3866,7 @@
         "Full_text_length":299,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0463"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0463.hocr"
     },
     {
         "Average_confidence":59,
@@ -3806,7 +3874,7 @@
         "Full_text_length":87,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0464"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0464.hocr"
     },
     {
         "Average_confidence":52,
@@ -3814,7 +3882,7 @@
         "Full_text_length":290,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0465"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0465.hocr"
     },
     {
         "Average_confidence":57,
@@ -3822,7 +3890,7 @@
         "Full_text_length":33,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0466"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0466.hocr"
     },
     {
         "Average_confidence":53,
@@ -3830,7 +3898,7 @@
         "Full_text_length":1396,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0467"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0467.hocr"
     },
     {
         "Average_confidence":54,
@@ -3838,7 +3906,7 @@
         "Full_text_length":1299,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0468"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0468.hocr"
     },
     {
         "Average_confidence":53,
@@ -3846,7 +3914,7 @@
         "Full_text_length":1694,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0469"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0469.hocr"
     },
     {
         "Average_confidence":53,
@@ -3854,7 +3922,7 @@
         "Full_text_length":995,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0470"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0470.hocr"
     },
     {
         "Average_confidence":95,
@@ -3862,7 +3930,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0471"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0471.hocr"
     },
     {
         "Average_confidence":59,
@@ -3870,15 +3938,16 @@
         "Full_text_length":365,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0472"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0472.hocr"
     },
     {
         "Average_confidence":67,
         "Entity_stats":{},
         "Full_text_length":203,
+        "Spelling_accuracy":69,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0473"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0473.hocr"
     },
     {
         "Average_confidence":71,
@@ -3886,9 +3955,10 @@
             "ORG":"1"
         },
         "Full_text_length":159,
+        "Spelling_accuracy":47,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0474"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0474.hocr"
     },
     {
         "Average_confidence":58,
@@ -3896,7 +3966,7 @@
         "Full_text_length":97,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0475"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0475.hocr"
     },
     {
         "Average_confidence":54,
@@ -3904,7 +3974,7 @@
         "Full_text_length":451,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0476"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0476.hocr"
     },
     {
         "Average_confidence":52,
@@ -3912,7 +3982,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0477"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0477.hocr"
     },
     {
         "Average_confidence":63,
@@ -3920,9 +3990,10 @@
             "PERSON":"1"
         },
         "Full_text_length":58,
+        "Spelling_accuracy":77,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0478"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0478.hocr"
     },
     {
         "Average_confidence":95,
@@ -3930,7 +4001,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0479"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0479.hocr"
     },
     {
         "Average_confidence":95,
@@ -3938,7 +4009,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0480"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0480.hocr"
     },
     {
         "Average_confidence":54,
@@ -3946,7 +4017,7 @@
         "Full_text_length":103,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0481"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0481.hocr"
     },
     {
         "Average_confidence":51,
@@ -3954,15 +4025,16 @@
         "Full_text_length":68,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0482"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0482.hocr"
     },
     {
         "Average_confidence":62,
         "Entity_stats":{},
         "Full_text_length":27,
+        "Spelling_accuracy":66,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0483"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0483.hocr"
     },
     {
         "Average_confidence":95,
@@ -3970,7 +4042,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0484"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0484.hocr"
     },
     {
         "Average_confidence":55,
@@ -3978,7 +4050,7 @@
         "Full_text_length":44,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0485"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0485.hocr"
     },
     {
         "Average_confidence":46,
@@ -3986,7 +4058,7 @@
         "Full_text_length":90,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0486"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0486.hocr"
     },
     {
         "Average_confidence":56,
@@ -3994,7 +4066,7 @@
         "Full_text_length":54,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0487"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0487.hocr"
     },
     {
         "Average_confidence":95,
@@ -4002,7 +4074,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0488"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0488.hocr"
     },
     {
         "Average_confidence":95,
@@ -4010,7 +4082,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0489"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0489.hocr"
     },
     {
         "Average_confidence":45,
@@ -4018,7 +4090,7 @@
         "Full_text_length":549,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0490"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0490.hocr"
     },
     {
         "Average_confidence":56,
@@ -4026,7 +4098,7 @@
         "Full_text_length":36,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0491"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0491.hocr"
     },
     {
         "Average_confidence":55,
@@ -4034,7 +4106,7 @@
         "Full_text_length":136,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0492"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0492.hocr"
     },
     {
         "Average_confidence":50,
@@ -4042,7 +4114,7 @@
         "Full_text_length":409,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0493"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0493.hocr"
     },
     {
         "Average_confidence":53,
@@ -4050,7 +4122,7 @@
         "Full_text_length":255,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0494"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0494.hocr"
     },
     {
         "Average_confidence":66,
@@ -4058,9 +4130,10 @@
             "ORG":"1"
         },
         "Full_text_length":29,
+        "Spelling_accuracy":87,
         "Total_entities_found":3,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0495"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0495.hocr"
     },
     {
         "Average_confidence":56,
@@ -4068,7 +4141,7 @@
         "Full_text_length":17,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0496"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0496.hocr"
     },
     {
         "Average_confidence":49,
@@ -4076,7 +4149,7 @@
         "Full_text_length":117,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0497"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0497.hocr"
     },
     {
         "Average_confidence":51,
@@ -4084,7 +4157,7 @@
         "Full_text_length":39,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0498"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0498.hocr"
     },
     {
         "Average_confidence":53,
@@ -4092,7 +4165,7 @@
         "Full_text_length":63,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0499"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0499.hocr"
     },
     {
         "Average_confidence":95,
@@ -4100,7 +4173,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0500"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0500.hocr"
     },
     {
         "Average_confidence":52,
@@ -4108,7 +4181,7 @@
         "Full_text_length":84,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0501"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0501.hocr"
     },
     {
         "Average_confidence":95,
@@ -4116,15 +4189,16 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0502"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0502.hocr"
     },
     {
         "Average_confidence":62,
         "Entity_stats":{},
         "Full_text_length":35,
+        "Spelling_accuracy":83,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0503"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0503.hocr"
     },
     {
         "Average_confidence":95,
@@ -4132,7 +4206,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0504"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0504.hocr"
     },
     {
         "Average_confidence":95,
@@ -4140,7 +4214,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0505"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0505.hocr"
     },
     {
         "Average_confidence":50,
@@ -4148,7 +4222,7 @@
         "Full_text_length":823,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0506"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0506.hocr"
     },
     {
         "Average_confidence":53,
@@ -4156,7 +4230,7 @@
         "Full_text_length":256,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0507"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0507.hocr"
     },
     {
         "Average_confidence":57,
@@ -4164,7 +4238,7 @@
         "Full_text_length":29,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0508"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0508.hocr"
     },
     {
         "Average_confidence":60,
@@ -4172,9 +4246,10 @@
             "ORG":"1"
         },
         "Full_text_length":123,
+        "Spelling_accuracy":66,
         "Total_entities_found":2,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0509"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0509.hocr"
     },
     {
         "Average_confidence":58,
@@ -4182,7 +4257,7 @@
         "Full_text_length":20,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0510"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0510.hocr"
     },
     {
         "Average_confidence":95,
@@ -4190,7 +4265,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0511"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0511.hocr"
     },
     {
         "Average_confidence":59,
@@ -4198,7 +4273,7 @@
         "Full_text_length":73,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0512"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0512.hocr"
     },
     {
         "Average_confidence":50,
@@ -4206,7 +4281,7 @@
         "Full_text_length":174,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0513"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0513.hocr"
     },
     {
         "Average_confidence":95,
@@ -4214,7 +4289,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0514"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0514.hocr"
     },
     {
         "Average_confidence":47,
@@ -4222,7 +4297,7 @@
         "Full_text_length":442,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0515"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0515.hocr"
     },
     {
         "Average_confidence":95,
@@ -4230,7 +4305,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0516"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0516.hocr"
     },
     {
         "Average_confidence":95,
@@ -4238,7 +4313,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0517"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0517.hocr"
     },
     {
         "Average_confidence":95,
@@ -4246,7 +4321,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0518"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0518.hocr"
     },
     {
         "Average_confidence":47,
@@ -4254,7 +4329,7 @@
         "Full_text_length":405,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0519"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0519.hocr"
     },
     {
         "Average_confidence":56,
@@ -4262,7 +4337,7 @@
         "Full_text_length":43,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0520"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0520.hocr"
     },
     {
         "Average_confidence":47,
@@ -4270,7 +4345,7 @@
         "Full_text_length":1938,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0521"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0521.hocr"
     },
     {
         "Average_confidence":95,
@@ -4278,7 +4353,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0522"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0522.hocr"
     },
     {
         "Average_confidence":95,
@@ -4286,7 +4361,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0523"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0523.hocr"
     },
     {
         "Average_confidence":95,
@@ -4294,7 +4369,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0524"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0524.hocr"
     },
     {
         "Average_confidence":95,
@@ -4302,7 +4377,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0525"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0525.hocr"
     },
     {
         "Average_confidence":59,
@@ -4310,7 +4385,7 @@
         "Full_text_length":18,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0526"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0526.hocr"
     },
     {
         "Average_confidence":95,
@@ -4318,7 +4393,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0527"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0527.hocr"
     },
     {
         "Average_confidence":52,
@@ -4326,15 +4401,16 @@
         "Full_text_length":745,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0528"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0528.hocr"
     },
     {
         "Average_confidence":65,
         "Entity_stats":{},
         "Full_text_length":77,
+        "Spelling_accuracy":78,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0529"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0529.hocr"
     },
     {
         "Average_confidence":56,
@@ -4342,7 +4418,7 @@
         "Full_text_length":1867,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0530"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0530.hocr"
     },
     {
         "Average_confidence":57,
@@ -4350,7 +4426,7 @@
         "Full_text_length":1585,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0531"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0531.hocr"
     },
     {
         "Average_confidence":54,
@@ -4358,15 +4434,16 @@
         "Full_text_length":73,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0532"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0532.hocr"
     },
     {
         "Average_confidence":69,
         "Entity_stats":{},
         "Full_text_length":51,
+        "Spelling_accuracy":94,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0533"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0533.hocr"
     },
     {
         "Average_confidence":46,
@@ -4374,7 +4451,7 @@
         "Full_text_length":521,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0534"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0534.hocr"
     },
     {
         "Average_confidence":54,
@@ -4382,7 +4459,7 @@
         "Full_text_length":111,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0535"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0535.hocr"
     },
     {
         "Average_confidence":46,
@@ -4390,15 +4467,16 @@
         "Full_text_length":279,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0536"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0536.hocr"
     },
     {
         "Average_confidence":62,
         "Entity_stats":{},
         "Full_text_length":19,
+        "Spelling_accuracy":66,
         "Total_entities_found":1,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0537"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0537.hocr"
     },
     {
         "Average_confidence":50,
@@ -4406,7 +4484,7 @@
         "Full_text_length":631,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0538"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0538.hocr"
     },
     {
         "Average_confidence":95,
@@ -4414,7 +4492,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0539"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0539.hocr"
     },
     {
         "Average_confidence":49,
@@ -4422,7 +4500,7 @@
         "Full_text_length":394,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0540"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0540.hocr"
     },
     {
         "Average_confidence":54,
@@ -4430,7 +4508,7 @@
         "Full_text_length":205,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0541"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0541.hocr"
     },
     {
         "Average_confidence":48,
@@ -4438,7 +4516,7 @@
         "Full_text_length":442,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0542"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0542.hocr"
     },
     {
         "Average_confidence":95,
@@ -4446,7 +4524,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0543"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0543.hocr"
     },
     {
         "Average_confidence":49,
@@ -4454,15 +4532,16 @@
         "Full_text_length":165,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0544"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0544.hocr"
     },
     {
         "Average_confidence":70,
         "Entity_stats":{},
         "Full_text_length":5,
+        "Spelling_accuracy":100,
         "Total_entities_found":0,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0545"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0545.hocr"
     },
     {
         "Average_confidence":48,
@@ -4470,7 +4549,7 @@
         "Full_text_length":383,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0546"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0546.hocr"
     },
     {
         "Average_confidence":95,
@@ -4478,7 +4557,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0547"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0547.hocr"
     },
     {
         "Average_confidence":63,
@@ -4486,9 +4565,10 @@
             "ORG":"4"
         },
         "Full_text_length":601,
+        "Spelling_accuracy":59,
         "Total_entities_found":9,
         "Typescript":true,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0548"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0548.hocr"
     },
     {
         "Average_confidence":95,
@@ -4496,7 +4576,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0549"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0549.hocr"
     },
     {
         "Average_confidence":59,
@@ -4504,7 +4584,7 @@
         "Full_text_length":710,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0550"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0550.hocr"
     },
     {
         "Average_confidence":43,
@@ -4512,7 +4592,7 @@
         "Full_text_length":121,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0551"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0551.hocr"
     },
     {
         "Average_confidence":57,
@@ -4520,7 +4600,7 @@
         "Full_text_length":579,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0552"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0552.hocr"
     },
     {
         "Average_confidence":95,
@@ -4528,7 +4608,7 @@
         "Full_text_length":1,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0553"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0553.hocr"
     },
     {
         "Average_confidence":87,
@@ -4536,6 +4616,6 @@
         "Full_text_length":4,
         "Total_entities_found":0,
         "Typescript":false,
-        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0554"
+        "id":"https://dlcs-ida.org/iiif-img/2/1/T-21_ROLL-18_0554.hocr"
     }
 ]
