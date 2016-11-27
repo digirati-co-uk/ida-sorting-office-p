@@ -276,6 +276,9 @@
     <Content Include="App_Data\ocrdata\T-21_ROLL-29.json" />
     <Content Include="App_Data\ocrdata\T-21_ROLL-30.json" />
     <Content Include="App_Data\ocrdata\T-58_ROLL-1.json" />
+    <Content Include="credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
   </ItemGroup>
   <ItemGroup />

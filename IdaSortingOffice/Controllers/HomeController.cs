@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -15,6 +16,16 @@ namespace IdaSortingOffice.Controllers
 {
     public class HomeController : Controller
     {
+        protected class SiteCredentials
+        {
+            public string Prefix;
+            public string Username;
+            public string Password;
+        }
+
+        private static readonly object _siteCredentialsCacheLock = new object();
+        protected List<SiteCredentials> SiteCredentialsCache = null;
+
         public ActionResult Index()
         {
             return View(GetCachedRolls());
@@ -212,14 +223,31 @@ namespace IdaSortingOffice.Controllers
             string json = (string)HttpContext.Cache.Get(key);
             if (json == null)
             {
+                LoadSiteCredentials();
+
                 using (var wc = new WebClient())
                 {
+                    SetWebClientAuthentication(wc, url);
                     json = wc.DownloadString(url);
                 }
                 HttpContext.Cache.Insert(key, json, null, DateTime.UtcNow.AddHours(1), 
                     System.Web.Caching.Cache.NoSlidingExpiration);
             }
             return json;
+        }
+
+        private void SetWebClientAuthentication(WebClient wc, string url)
+        {
+            SiteCredentials credentials =
+                this.SiteCredentialsCache.FirstOrDefault(
+                    sc => url.StartsWith(sc.Prefix, StringComparison.InvariantCultureIgnoreCase));
+
+            if (credentials == null)
+            {
+                return;
+            }
+
+            wc.Credentials = new NetworkCredential(credentials.Username, credentials.Password);
         }
 
         private List<Roll> GetCachedRolls()
@@ -270,6 +298,34 @@ namespace IdaSortingOffice.Controllers
             return rolls;
         }
 
-        
+        private void LoadSiteCredentials()
+        {
+            if (this.SiteCredentialsCache == null)
+            {
+                lock (_siteCredentialsCacheLock)
+                {
+                    if (this.SiteCredentialsCache != null)
+                    {
+                        return;
+                    }
+
+                    this.SiteCredentialsCache = new List<SiteCredentials>();
+                    DirectoryInfo di = new DirectoryInfo(HttpContext.Server.MapPath("~"));
+                    string json = System.IO.File.ReadAllText(Path.Combine(di.FullName, ConfigurationManager.AppSettings["CredentialsFile"]));
+                    JObject j = JObject.Parse(json);
+                    foreach (JToken token in j["credentials"].Children())
+                    {
+                        SiteCredentials credential = new SiteCredentials
+                        {
+                            Prefix = token.Value<string>("prefix"),
+                            Username = token.Value<string>("username"),
+                            Password = token.Value<string>("password")
+                        };
+
+                        SiteCredentialsCache.Add(credential);
+                    }
+                }
+            }            
+        }
     }
 }
