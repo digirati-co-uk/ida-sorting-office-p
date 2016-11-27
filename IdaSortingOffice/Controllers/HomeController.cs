@@ -24,7 +24,7 @@ namespace IdaSortingOffice.Controllers
         }
 
         private static readonly object _siteCredentialsCacheLock = new object();
-        protected List<SiteCredentials> SiteCredentialsCache = null;
+        protected static List<SiteCredentials> SiteCredentialsCache = null;
 
         public ActionResult Index()
         {
@@ -239,7 +239,7 @@ namespace IdaSortingOffice.Controllers
         private void SetWebClientAuthentication(WebClient wc, string url)
         {
             SiteCredentials credentials =
-                this.SiteCredentialsCache.FirstOrDefault(
+                SiteCredentialsCache.FirstOrDefault(
                     sc => url.StartsWith(sc.Prefix, StringComparison.InvariantCultureIgnoreCase));
 
             if (credentials == null)
@@ -300,16 +300,16 @@ namespace IdaSortingOffice.Controllers
 
         private void LoadSiteCredentials()
         {
-            if (this.SiteCredentialsCache == null)
+            if (SiteCredentialsCache == null)
             {
                 lock (_siteCredentialsCacheLock)
                 {
-                    if (this.SiteCredentialsCache != null)
+                    if (SiteCredentialsCache != null)
                     {
                         return;
                     }
 
-                    this.SiteCredentialsCache = new List<SiteCredentials>();
+                    SiteCredentialsCache = new List<SiteCredentials>();
                     DirectoryInfo di = new DirectoryInfo(HttpContext.Server.MapPath("~"));
                     string json = System.IO.File.ReadAllText(Path.Combine(di.FullName, ConfigurationManager.AppSettings["CredentialsFile"]));
                     JObject j = JObject.Parse(json);

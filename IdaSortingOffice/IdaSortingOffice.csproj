@@ -279,6 +279,7 @@
     <Content Include="credentials.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\IDA.pubxml" />
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
   </ItemGroup>
   <ItemGroup />
