@@ -125,10 +125,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RangeData.cs" />
     <Compile Include="Models\Roll.cs" />
     <Compile Include="Models\Util.cs" />
@@ -281,6 +283,9 @@
     </Content>
     <None Include="Properties\PublishProfiles\IDA.pubxml" />
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="settings.config" />
+    <Content Include="Views\Home\SortingOffice.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

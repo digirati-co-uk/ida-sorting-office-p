@@ -4,7 +4,6 @@
     ViewBag.Title = "Home Page";
 }
 
-
 <div class="row">
     <div class="col-md-12">
         <h2>Lists of Microfilm rolls</h2>
@@ -27,7 +26,7 @@
                         <td style="white-space:nowrap;">
                             @if (roll.Id != null)
                             {
-                                <a href="/sortingoffice.html?manifest=@(Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/" + roll.Id)">@roll.Id</a>
+                                <a href="/sortingoffice?manifest=@(Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/" + roll.Id)">@roll.Id</a>
                             }
                         </td>
                         <td>@roll.Title</td>

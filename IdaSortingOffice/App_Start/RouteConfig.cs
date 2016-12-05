@@ -14,6 +14,11 @@ namespace IdaSortingOffice
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "SOrtingOffice",
+                url: "sortingoffice",
+                defaults: new { controller = "Home", action = "SortingOffice" }
+            );
+            routes.MapRoute(
                 name: "Roll",
                 url: "roll/{*pathInfo}",
                 defaults: new { controller = "Home", action = "Roll" }

@@ -26,9 +26,16 @@ namespace IdaSortingOffice.Controllers
         private static readonly object _siteCredentialsCacheLock = new object();
         protected static List<SiteCredentials> SiteCredentialsCache = null;
 
+        [Authorize]
         public ActionResult Index()
         {
             return View(GetCachedRolls());
+        }
+
+        [Authorize]
+        public ActionResult SortingOffice()
+        {
+            return View();
         }
 
         public ActionResult Roll()
