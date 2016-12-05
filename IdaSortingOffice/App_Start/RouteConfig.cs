@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace IdaSortingOffice
@@ -14,7 +10,7 @@ namespace IdaSortingOffice
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "SOrtingOffice",
+                name: "SortingOffice",
                 url: "sortingoffice",
                 defaults: new { controller = "Home", action = "SortingOffice" }
             );
