@@ -6,7 +6,7 @@ var authDo;
 var assumeFullMax = false;
 var startCanvas = null;
 var endCanvas = null;
-var ranges = null;
+var derivedManifests = null;
 
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
@@ -158,30 +158,72 @@ function load(manifest) {
     $('#manifestWait').hide();
 }
 
-function getCreatedManifests() {
-    $.getJSON("/home/ranges?id=" + loadedResource, function (manifests) {
-        ranges = manifests;
-        $("#manifestSelector").append("<option value=\"" + loadedResource + "\">Original manifest</option>");
-        for (var i = 0; i < manifests.length; i++) {
-            $("#manifestSelector").append("<option value=\"" + manifests[i].RangeManifestId + "\">" + manifests[i].Id + "</option>");
-        }
-        $("#manifestSelector").change(function() {
-            for (var r = 0; r < ranges.length; r++) {
-                if (ranges[r].RangeManifestId === $(this).val()) {
-                    startCanvas = ranges[r].StartCanvas;
-                    endCanvas = ranges[r].EndCanvas;
-                    var start = markSelection();
-                    start.scrollIntoView();
-                    break;
-                }
-            }
-        });
-        $("#viewManifest").click(function() {
-            loadManifestPage($("#manifestSelector").val());
-        });
-    });
+function getCollectionUrlForLoadedResource() {
+    return "/collections/ida/" + getUriComponent(loadedResource);
 }
 
+function getUriComponent(str) {
+    // for demo purposes! Not safe for general URL patterns
+    return str.replace("http://", "").replace("https://", "s").replace(/\//g, "_").replace(/\:/g, "-");
+}
+
+function getCreatedManifests() {
+    // run on page load
+    $("#manifestSelector").append("<option value=\"" + loadedResource + "\">Original manifest</option>");
+    var collectionId = getCollectionUrlForLoadedResource(); // get the container in presley
+    console.log("attemp to load " + collectionId);
+    $.getJSON(collectionId)
+        .done(function (collection) {
+
+
+            derivedManifests = collection;
+            if (collection && collection.members) {
+                for (var i = 0; i < collection.members.length; i++) {
+                    var manifest = collection.members[i];
+                    var label = manifest.label || manifest["@id"];
+                    $("#manifestSelector").append("<option value=\"" + manifest["@id"] + "\">" + label + "</option>");
+                }
+            }
+            $("#manifestSelector").change(selectDerivedManifest);
+            $("#viewManifest").click(function () {
+                loadManifestPage($("#manifestSelector").val());
+            });
+
+
+
+        })
+        .fail(function () {
+            console.log("no load " + collectionId);
+            derivedManifests = null;
+        });
+}
+
+function selectDerivedManifest() {
+    for (var r = 0; r < derivedManifests.members.length; r++) {
+        var manifestId = derivedManifests.members[r]["@id"];
+        if (manifestId === $(this).val()) {
+            // load this manifest
+            $.getJSON(manifestId).done(function (fullManifest) {
+                startCanvas = fullManifest.sequences[0].canvases[0]["@id"];
+                endCanvas = fullManifest.sequences[0].canvases[canvases.length - 1]["@id"];
+                if (fullManifest.service) {
+                    if (!Array.isArray(fullManifest.service)) {
+                        fullManifest.service = [fullManifest.service];
+                    }
+                    fullManifest.service.forEach(function (svc) {
+                        if (svc.profile && svc.profile == "https://dlcs.info/profiles/canvasmap") {
+                            startCanvas = svc.canvasmap[startCanvas] || startCanvas;
+                            endCanvas = svc.canvasmap[endCanvas] || endCanvas;
+                        }
+                    });
+                }
+                var start = markSelection();
+                start.scrollIntoView();
+            });
+            break;
+        }
+    }
+}
 var thumbImageTemplate = "<img class=\"thumb\" title=\"{label}\" data-uri=\"{canvasId}\" data-src=\"{dataSrc}\" {dimensions} />";
 
 function drawThumbs(){

@@ -126,7 +126,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PresleyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +150,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="script\iiif.js" />
     <Content Include="sortingoffice.html" />
     <Content Include="script\bootstrap.min.js" />
     <Content Include="script\thumbs.js" />
@@ -281,13 +284,19 @@
     <Content Include="credentials.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="App_Data\presley\ida\readme.md" />
+    <Content Include="App_Data\collection-template.json" />
+    <Content Include="App_Data\simple-manifest-template.json" />
     <None Include="Properties\PublishProfiles\IDA.pubxml" />
     <None Include="Properties\PublishProfiles\SortingOffice.pubxml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="settings.config" />
     <Content Include="Views\Home\SortingOffice.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\Presley\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
