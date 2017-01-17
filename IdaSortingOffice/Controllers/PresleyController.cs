@@ -123,7 +123,8 @@ namespace IdaSortingOffice.Controllers
                     mapService["canvasmap"] = canvasmap;
                     services.Add(mapService);
                 }
-                if(services.Any())
+                manifest["service"] = null;
+                if (services.Any())
                 {
                     if(services.Count == 1)
                     {
