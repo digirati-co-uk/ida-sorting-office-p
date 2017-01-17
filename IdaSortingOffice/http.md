@@ -4,7 +4,7 @@
 * Sorty queries PRESLEY to get any already created manifests from this container:
 
 `GET /presley/ida/localhost-47724_roll_M-1304_01_`
-...
+
 `HTTP/1.1 404 Could not find requested container`
 
 OK, no container exists for this manifest (or whatever container strategy you are using)
@@ -307,7 +307,8 @@ OK, no container exists for this manifest (or whatever container strategy you ar
 
 `GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6`
 
-* PRESLEY returns the manifest. Note the canvasmap service, which Sorty will use in a bit:
+* PRESLEY returns the manifest. 
+* **Note the canvasmap service, which Sorty will use in a bit:**
 
 ```
 {
