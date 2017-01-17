@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
@@ -63,10 +64,12 @@ namespace IdaSortingOffice.Controllers
             }
             if(manifestName != null && Request.HttpMethod == "GET")
             {
-                var manifestPath = HttpContext.Server.MapPath(root + containerName + ".json");
+                var manifestPath = HttpContext.Server.MapPath(root + containerName + "/" + manifestName + ".json");
                 if(System.IO.File.Exists(manifestPath))
                 {
-                    return new FilePathResult(manifestPath, "application/json");
+
+                    var json = System.IO.File.ReadAllText(manifestPath);
+                    return Content(json, "application/json");
                 }
                 else
                 {
@@ -79,6 +82,67 @@ namespace IdaSortingOffice.Controllers
                 // mint new ids
                 // make a canvasmap
                 // save the manifest with its canvasmap
+
+                var folder = HttpContext.Server.MapPath(root + containerName);
+                var di = new System.IO.DirectoryInfo(folder);
+                if (!di.Exists) di.Create();
+                var manifest = GetRequestBodyAsJObject();
+                manifest["@id"] = Request.Url.AbsoluteUri;
+                var services = new JArray();
+                if(manifest["service"] != null)
+                {
+                    if(manifest["service"] is JArray)
+                    {
+                        services = (JArray)manifest["service"];
+                    }
+                    else
+                    {
+                        services.Add(manifest["service"]);
+                    }
+                }
+                var mintServices = services.Where(s => s["profile"].ToString() == "https://dlcs.info/profiles/mintrequest").ToList();
+                if(mintServices.Any())
+                {
+                    foreach(var mintService in mintServices)
+                    {
+                        services.Remove(mintService);
+                    }
+                    var canvases = manifest["sequences"][0]["canvases"] as JArray;
+                    var canvasmap = new JObject();
+                    foreach(var canvas in canvases)
+                    {
+                        var uriAuthority = Request.Url.GetLeftPart(UriPartial.Authority);
+                        var newCanvasId = uriAuthority + "/canvases/" + Guid.NewGuid().ToString("N");
+                        canvasmap[newCanvasId] = canvas["@id"].ToString();
+                        canvas["@id"] = newCanvasId;
+                    }
+                    var mapService = new JObject();
+                    mapService["@id"] = manifest["@id"] + "/canvasmap";
+                    mapService["@context"] = "https://dlcs.info/context/presley";
+                    mapService["profile"] = "https://dlcs.info/profiles/canvasmap";
+                    mapService["canvasmap"] = canvasmap;
+                    services.Add(mapService);
+                }
+                if(services.Any())
+                {
+                    if(services.Count == 1)
+                    {
+                        manifest["service"] = services[0];
+                    }
+                    else
+                    {
+                        manifest["service"] = services;
+                    }
+                }
+
+                var json = JsonConvert.SerializeObject(manifest, Formatting.Indented);
+                var target = HttpContext.Server.MapPath(root + containerName + "/" + manifestName + ".json");
+                if (!System.IO.File.Exists(target))
+                {
+                    Response.StatusCode = 201;
+                }
+                System.IO.File.WriteAllText(target, json, Encoding.UTF8);
+                return Content(json, "application/json");
             }
             throw new HttpException(501, "Not Implemented required");
         }        

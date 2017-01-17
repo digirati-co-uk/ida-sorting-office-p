@@ -8,6 +8,9 @@ var startCanvas = null;
 var endCanvas = null;
 var derivedManifests = null;
 
+// var presentationServer = "https://presley.com/"
+var presentationServer = location.protocol + '//' + location.host;
+
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
 pop += "    <div class=\"modal-dialog modal-lg\" role=\"document\">";
@@ -56,6 +59,22 @@ rv += "    <hr \/>";
 rv += "    <p>Thumbnail viewer<\/p>";
 rv += "<\/footer>";
 
+var manifestTemplate = {
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "to be replaced",
+    "@type": "sc:Manifest",
+    "service": {
+        "profile": "https://dlcs.info/profiles/mintrequest"
+    },
+    "sequences": [
+      {
+          "@id": "to be replaced",
+          "@type": "sc:Sequence",
+          "label": "Default sequence",
+          "canvases": []
+      }
+    ]
+}
 
 $(function() {
     $("#mainContainer").append(rv);
@@ -88,19 +107,21 @@ $(function() {
             alert("invalid selection");
             return;
         }
-        var range = {
-            manifestId: loadedResource,
-            startCanvas: startCanvas,
-            endCanvas: endCanvas
-        };
+        var newManifest = $.extend(true, {}, manifestTemplate);
+        var manifestName = "/manifest_" + s + "-" + e;
+        newManifest["@id"] = getCollectionUrlForLoadedResource() + manifestName;
+        newManifest["sequences"][0]["@id"] = newManifest["@id"].replace(manifestName, "sequence0");
+        for (var cvsIdx = s; cvsIdx <= e; cvsIdx++) {
+            newManifest["sequences"][0]["canvases"].push(canvasList[cvsIdx]);
+        }
         $.ajax({
-            url: '/SaveRange',
-            type: 'POST',
+            url: newManifest["@id"],
+            type: 'PUT',
             contentType: 'application/json',
-            data: JSON.stringify(range),
+            data: JSON.stringify(newManifest),
             dataType: 'json'
         }).done(function (data, textStatus, xhr) {
-            loadManifestPage(data.RangeManifestId);
+            loadManifestPage(newManifest["@id"]);
         }).fail(function(xhr, textStatus, error) {
             alert(error);
         });
@@ -159,7 +180,7 @@ function load(manifest) {
 }
 
 function getCollectionUrlForLoadedResource() {
-    return "/collections/ida/" + getUriComponent(loadedResource);
+    return presentationServer + "/presley/ida/" + getUriComponent(loadedResource);
 }
 
 function getUriComponent(str) {
@@ -174,6 +195,7 @@ function getCreatedManifests() {
     console.log("attemp to load " + collectionId);
     $.getJSON(collectionId)
         .done(function (collection) {
+
 
 
             derivedManifests = collection;
@@ -204,8 +226,9 @@ function selectDerivedManifest() {
         if (manifestId === $(this).val()) {
             // load this manifest
             $.getJSON(manifestId).done(function (fullManifest) {
-                startCanvas = fullManifest.sequences[0].canvases[0]["@id"];
-                endCanvas = fullManifest.sequences[0].canvases[canvases.length - 1]["@id"];
+                var derivedCanvasList = fullManifest.sequences[0].canvases;
+                startCanvas = derivedCanvasList[0]["@id"];                
+                endCanvas = derivedCanvasList[derivedCanvasList.length - 1]["@id"];
                 if (fullManifest.service) {
                     if (!Array.isArray(fullManifest.service)) {
                         fullManifest.service = [fullManifest.service];

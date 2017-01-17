@@ -19,7 +19,7 @@ namespace IdaSortingOffice.Controllers
             {
                 ManifestJson = GetJsonFromTemplate("~/App_Data/manifest-template.json");
             }
-            return GetJsonTemplate(ManifestJson);
+            return JObject.Parse(ManifestJson);
         }
 
         protected JObject GetCollectionTemplate()
@@ -28,7 +28,7 @@ namespace IdaSortingOffice.Controllers
             {
                 CollectionJson = GetJsonFromTemplate("~/App_Data/collection-template.json");
             }
-            return GetJsonTemplate(CollectionJson);
+            return JObject.Parse(CollectionJson);
         }
 
         protected JObject GetSimpleManifestTemplate()
@@ -37,7 +37,7 @@ namespace IdaSortingOffice.Controllers
             {
                 SimpleManifestJson = GetJsonFromTemplate("~/App_Data/simple-manifest-template.json");
             }
-            return GetJsonTemplate(SimpleManifestJson);
+            return JObject.Parse(SimpleManifestJson);
 
         }
 
@@ -52,6 +52,13 @@ namespace IdaSortingOffice.Controllers
             var templateFile = HttpContext.Server.MapPath(path);
             var json = System.IO.File.ReadAllText(templateFile);
             return json;
+        }
+
+        protected JObject GetRequestBodyAsJObject()
+        {
+            var req = Request.InputStream;
+            var json = new System.IO.StreamReader(req).ReadToEnd();
+            return JObject.Parse(json);
         }
     }
 }
