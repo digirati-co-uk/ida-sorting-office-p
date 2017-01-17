@@ -150,6 +150,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <None Include="http.md" />
     <Content Include="script\iiif.js" />
     <Content Include="sortingoffice.html" />
     <Content Include="script\bootstrap.min.js" />

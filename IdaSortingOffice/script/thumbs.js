@@ -63,6 +63,7 @@ var manifestTemplate = {
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@id": "to be replaced",
     "@type": "sc:Manifest",
+    "label": "to be replaced",
     "service": {
         "profile": "https://dlcs.info/profiles/mintrequest"
     },
@@ -109,7 +110,9 @@ $(function() {
         }
         var newManifest = $.extend(true, {}, manifestTemplate);
         var manifestName = "/manifest_" + s + "-" + e;
-        newManifest["@id"] = getCollectionUrlForLoadedResource() + manifestName;
+        var collName = getCollectionUrlForLoadedResource();
+        newManifest["@id"] = collName + manifestName;
+        newManifest["label"] = collName.substring(collName.indexOf("_roll_") + 6) + " canvases " + s + "-" + e;
         newManifest["sequences"][0]["@id"] = newManifest["@id"].replace(manifestName, "sequence0");
         for (var cvsIdx = s; cvsIdx <= e; cvsIdx++) {
             newManifest["sequences"][0]["canvases"].push(canvasList[cvsIdx]);

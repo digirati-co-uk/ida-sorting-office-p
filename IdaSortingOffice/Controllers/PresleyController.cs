@@ -46,12 +46,15 @@ namespace IdaSortingOffice.Controllers
                 if (di.Exists)
                 {
                     var collection = GetCollectionTemplate();
+                    collection["@id"] = Request.Url.AbsoluteUri;
                     var members = new JArray();
                     foreach(var fi in di.GetFiles())
                     {
                         var member = GetSimpleManifestTemplate();
                         member["@id"] = Request.Url.AbsoluteUri + "/" + fi.Name.Replace(".json", "");
-                        member["label"] = null; // come back to this; need to read each file...
+                        // nothing else for it... need to return the label for the manifest
+                        var memberManifest = JObject.Parse(System.IO.File.ReadAllText(fi.FullName));
+                        member["label"] = memberManifest["label"];
                         members.Add(member);
                     }
                     collection["members"] = members;
@@ -67,7 +70,6 @@ namespace IdaSortingOffice.Controllers
                 var manifestPath = HttpContext.Server.MapPath(root + containerName + "/" + manifestName + ".json");
                 if(System.IO.File.Exists(manifestPath))
                 {
-
                     var json = System.IO.File.ReadAllText(manifestPath);
                     return Content(json, "application/json");
                 }
