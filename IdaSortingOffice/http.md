@@ -3,9 +3,9 @@
 * Sorty knows what the URI of the container for this manifest is (in this case it's just based on the external manifest name)
 * Sorty queries PRESLEY to get any already created manifests from this container:
 
-GET /presley/ida/localhost-47724_roll_M-1304_01_
+`GET /presley/ida/localhost-47724_roll_M-1304_01_`
 ...
-HTTP/1.1 404 Could not find requested container
+`HTTP/1.1 404 Could not find requested container`
 
 OK, no container exists for this manifest (or whatever container strategy you are using)
 
@@ -17,8 +17,9 @@ OK, no container exists for this manifest (or whatever container strategy you ar
 * Sorty adds a special service block to the manifest to signal to PRESLEY that it wants PRESLEY to mint new canvas @ids (see payload next)
 * Sorty PUTs:
 
-PUT /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
+`PUT /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6`
 
+```
 {
    "@context":"http://iiif.io/api/presentation/2/context.json",
    "@id":"http://localhost:47724/presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6",
@@ -293,6 +294,7 @@ PUT /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
       }
    ]
 }
+```
 
 * PRESLEY processes the PUTted manifest. It sees the "mint new IDs" block.
 * PRESLEY mints new @ids for the canvases. It creates a map of the new canvas @ids to the old ones.
@@ -303,10 +305,11 @@ PUT /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
 * Sorty then redirects to the UV with ?manifest=(the new manifest @id)
 * UV requests the manifest:
 
-GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
+`GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6`
 
 * PRESLEY returns the manifest. Note the canvasmap service, which Sorty will use in a bit:
 
+```
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@id": "http://localhost:47724/presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6",
@@ -588,15 +591,17 @@ GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
     }
   ]
 }
+```
 
 * User is happy.
 * User goes back to Sorty, to look at the source manifest again
 * Sorty again requests the container to see if there are any derived manifests. This time, it's not a 404 - the container is returned:
 
-GET /presley/ida/localhost-47724_roll_M-1304_01_
+`GET /presley/ida/localhost-47724_roll_M-1304_01_`
 
 * PRESLEY enumerates the manifests in the container and returns them as a collection:
 
+```
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@id": "/presley/ida/localhost-47724_roll_M-1304_01_",
@@ -609,12 +614,13 @@ GET /presley/ida/localhost-47724_roll_M-1304_01_
     }
   ]
 }
+```
 
 * Sorty populates the drop down with this list
 * User selects a manifest
 * Sorty requests the manifest @id:
  
-GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6
+`GET /presley/ida/localhost-47724_roll_M-1304_01_/manifest_4-6`
 
 (response body same as before)
 
