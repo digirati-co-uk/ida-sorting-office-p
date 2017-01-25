@@ -1,6 +1,9 @@
 ﻿
 * User loads external manifest into Sorty
 * Sorty knows what the URI of the container for this manifest is (in this case it's just based on the external manifest name)
+* The name for the container in the examples below is `localhost-47724_roll_M-1304_01_`
+* this could just be a hash, but I decided to make it a readable tranformation of the original manifest @id.
+* Presley shouldn't care as long as the container name is valid for a URI path segment
 * Sorty queries PRESLEY to get any already created manifests from this container:
 
 `GET /presley/ida/localhost-47724_roll_M-1304_01_`

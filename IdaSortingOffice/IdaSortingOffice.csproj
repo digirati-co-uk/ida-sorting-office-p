@@ -139,6 +139,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\presley\ida\collections\keep.txt" />
+    <Content Include="App_Data\presley\ida\manifests\keep.txt" />
+    <Content Include="App_Data\presley\ida\ranges\keep.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\bootstrap.css" />

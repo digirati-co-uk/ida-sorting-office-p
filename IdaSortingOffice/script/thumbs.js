@@ -109,11 +109,10 @@ $(function() {
             return;
         }
         var newManifest = $.extend(true, {}, manifestTemplate);
-        var manifestName = "/manifest_" + s + "-" + e;
-        var collName = getCollectionUrlForLoadedResource();
-        newManifest["@id"] = collName + manifestName;
-        newManifest["label"] = collName.substring(collName.indexOf("_roll_") + 6) + " canvases " + s + "-" + e;
-        newManifest["sequences"][0]["@id"] = newManifest["@id"].replace(manifestName, "sequence0");
+        var manifestName = "cvs-" + s + "-" + e;
+        newManifest["@id"] = getManifestUrlForLoadedResource(manifestName);
+        newManifest["label"] = getManifestLabel(s, e);
+        newManifest["sequences"][0]["@id"] = newManifest["@id"].replace("/manifest", "/sequence/s0");
         for (var cvsIdx = s; cvsIdx <= e; cvsIdx++) {
             newManifest["sequences"][0]["canvases"].push(canvasList[cvsIdx]);
         }
@@ -124,7 +123,19 @@ $(function() {
             data: JSON.stringify(newManifest),
             dataType: 'json'
         }).done(function (data, textStatus, xhr) {
-            loadManifestPage(newManifest["@id"]);
+            newManifest.sequences = null;
+            newManifest.service = null;
+            $.ajax({
+                url: getCollectionUrlForLoadedResource,
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(newManifest),
+                dataType: 'json'
+            }).done(function (data, textStatus, xhr) {
+                loadManifestPage(newManifest["@id"]);
+            }).fail(function (xhr, textStatus, error) {
+                alert(error);
+            });
         }).fail(function(xhr, textStatus, error) {
             alert(error);
         });
@@ -182,13 +193,27 @@ function load(manifest) {
     $('#manifestWait').hide();
 }
 
+function getManifestLabel(start, end) {
+    return getPath(loadedResource).replace(/\//g, " ") + "canvases " + start + "-" + end;
+}
+
 function getCollectionUrlForLoadedResource() {
-    return presentationServer + "/presley/ida/" + getUriComponent(loadedResource);
+    return presentationServer + "/presley/ida/collection/" + getUriComponent(loadedResource);
+}
+
+function getManifestUrlForLoadedResource(manifestName) {
+    var identifier = getUriComponent(loadedResource) + manifestName;
+    return presentationServer + "/presley/ida/" + identifier + "/manifest";
+}
+
+function getPath(url) {
+    var reg = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
+    return reg.exec(url)[1];
 }
 
 function getUriComponent(str) {
     // for demo purposes! Not safe for general URL patterns
-    return str.replace("http://", "").replace("https://", "s").replace(/\//g, "_").replace(/\:/g, "-");
+    return getPath(str).replace(/\//g, "_");
 }
 
 function getCreatedManifests() {
