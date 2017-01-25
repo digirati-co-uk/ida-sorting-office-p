@@ -126,7 +126,7 @@ $(function() {
             newManifest.sequences = null;
             newManifest.service = null;
             $.ajax({
-                url: getCollectionUrlForLoadedResource,
+                url: getCollectionUrlForLoadedResource(),
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(newManifest),

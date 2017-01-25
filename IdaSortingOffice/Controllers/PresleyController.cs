@@ -98,7 +98,7 @@ namespace IdaSortingOffice.Controllers
                 }
                 if (op.HttpMethod == "POST")
                 {
-                    PostToCollection(collFile);
+                    return PostToCollection(collFile);
                 }
             }
 
@@ -199,7 +199,7 @@ namespace IdaSortingOffice.Controllers
             }
         }
 
-        private void PostToCollection(System.IO.FileInfo collFile)
+        private ActionResult PostToCollection(System.IO.FileInfo collFile)
         {
             // we are putting a manifest into a collection - but this is not containment, it's association.
             // The JSON-LD object posted is just the @id
@@ -217,12 +217,19 @@ namespace IdaSortingOffice.Controllers
                 {
                     manifestList = JArray.Parse(System.IO.File.ReadAllText(collFile.FullName));
                 }
-                manifestList.Add(filePath);
-                var json = JsonConvert.SerializeObject(manifestList, Formatting.Indented);
-                System.IO.File.WriteAllText(collFile.FullName, json, Encoding.UTF8);
+                if(manifestList.All(m => m.ToString() != filePath.FullName))
+                {
+                    manifestList.Add(filePath.FullName);
+                    var json = JsonConvert.SerializeObject(manifestList, Formatting.Indented);
+                    System.IO.File.WriteAllText(collFile.FullName, json, Encoding.UTF8);
+                }
                 Response.StatusCode = 202;
                 Response.StatusDescription = "Accepted";
+                return Content("\"Accepted\"", "application/json");
             }
+            Response.StatusCode = 400;
+            Response.StatusDescription = "Only Presley manifests for now in this mockup";
+            return new EmptyResult();
         }
 
         private ActionResult GetCollection(System.IO.FileInfo collFile)
