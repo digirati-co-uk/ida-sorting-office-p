@@ -122,7 +122,7 @@ $(function() {
             contentType: 'application/json',
             data: JSON.stringify(newManifest),
             dataType: 'json'
-        }).done(function (data, textStatus, xhr) {
+        }).done(function () {
             newManifest.sequences = null;
             newManifest.service = null;
             $.ajax({
@@ -131,7 +131,7 @@ $(function() {
                 contentType: 'application/json',
                 data: JSON.stringify(newManifest),
                 dataType: 'json'
-            }).done(function (data, textStatus, xhr) {
+            }).done(function () {
                 loadManifestPage(newManifest["@id"]);
             }).fail(function (xhr, textStatus, error) {
                 alert(error);
@@ -178,6 +178,7 @@ function processQueryString(){
 
 
 function load(manifest) {
+    IIIF.wrap(manifest);
     getCreatedManifests();
     var thumbs = $('#thumbs');
     thumbs.empty();
@@ -223,15 +224,13 @@ function getCreatedManifests() {
     console.log("attemp to load " + collectionId);
     $.getJSON(collectionId)
         .done(function (collection) {
-
-
-
+            IIIF.wrap(collection);
             derivedManifests = collection;
-            if (collection && collection.members) {
-                for (var i = 0; i < collection.members.length; i++) {
-                    var manifest = collection.members[i];
-                    var label = manifest.label || manifest["@id"];
-                    $("#manifestSelector").append("<option value=\"" + manifest["@id"] + "\">" + label + "</option>");
+            if (derivedManifests && derivedManifests.members) {
+                for (var i = 0; i < derivedManifests.members.length; i++) {
+                    var manifest = derivedManifests.members[i];
+                    var label = manifest.label || manifest.id;
+                    $("#manifestSelector").append("<option value=\"" + manifest.id + "\">" + label + "</option>");
                 }
             }
             $("#manifestSelector").change(selectDerivedManifest);
@@ -250,7 +249,7 @@ function getCreatedManifests() {
 
 function selectDerivedManifest() {
     for (var r = 0; r < derivedManifests.members.length; r++) {
-        var manifestId = derivedManifests.members[r]["@id"];
+        var manifestId = derivedManifests.members[r].id;
         if (manifestId === $(this).val()) {
             // load this manifest
             $.getJSON(manifestId).done(function (fullManifest) {
@@ -287,7 +286,7 @@ function drawThumbs(){
         var additionalHtml = "";
         var confBar = "<div class=\"confBarPlaceholder\"></div>";
         var imgLabel = "";
-        if (canvas.service && canvas.service["@context"] === "https://dlcs-ida.org/ocr-info") {
+        if (canvas.service && canvas.service.context === "https://dlcs-ida.org/ocr-info") {
             var isType = canvas.service["Typescript"];
             divclass = isType ? "ocrType" : "ocrHand";
             if (isType) {
@@ -312,11 +311,13 @@ function drawThumbs(){
             }
         }
         var thumbHtml = '<div class="tc ' + divclass + '"><div class=\"cvLabel\">' + (canvas.label || '') + '</div>';
-        var thumb = getThumb(canvas, preferredSize);
+        var min = preferredSize < 100 ? 0 : Math.round(preferredSize * 0.8);
+        var max = preferredSize < 100 ? 200 : preferredSize * 2;
+        var thumb = canvas.getThumbnail(preferredSize, min, max) //getThumb(canvas, preferredSize);
         if(!thumb){ 
             thumbHtml += '<div class="thumb-no-access">Image not available</div></div>';
         } else {
-            var thumbImg = thumbImageTemplate.replace("{label}", imgLabel).replace("{canvasId}", canvas["@id"]).replace("{dataSrc}", thumb.url);
+            var thumbImg = thumbImageTemplate.replace("{label}", imgLabel).replace("{canvasId}", canvas.id).replace("{dataSrc}", thumb.url);
             var dimensions = "";
             if (thumb.width && thumb.height) {
                 dimensions = "width=\"" + thumb.width + "\" height=\"" + thumb.height + "\"";
@@ -332,42 +333,41 @@ function drawThumbs(){
     $("img.thumb").unveil(300);
 }
 
-function makeThumbSizeSelector(){
-    thumbSizes = [];
-    for(var i=0; i<Math.min(canvasList.length, 10); i++){
+function makeThumbSizeSelector() {
+    var choices = [30, 50, 100, 200, 400, 600];
+    var i;
+    for(i = 0; i<Math.min(canvasList.length, 10); i++){
         var canvas = canvasList[i];
         if(canvas.thumbnail && canvas.thumbnail.service && canvas.thumbnail.service.sizes){
             var sizes = canvas.thumbnail.service.sizes;
             for(var j=0; j<sizes.length;j++){
                 var testSize = Math.max(sizes[j].width, sizes[j].height);
-                if(thumbSizes.indexOf(testSize) == -1 && testSize <= 600){
-                    thumbSizes.push(testSize);
+                if (choices.indexOf(testSize) == -1 && testSize <= 600) {
+                    choices.push(testSize);
                 }
             }    
         }
     }
-    thumbSizes.sort(function(a, b) { return a - b; });
-    if(thumbSizes.length > 1){
-        var html = "<select id='thumbSize'>";
-        for(var i=0; i< thumbSizes.length; i++){
-            html += "<option value='" + thumbSizes[i] + "'>" + thumbSizes[i] + " pixels</option>";
-        }
-        html += "</select>";
-        $('#thumbSizeSelector').append(html);
-        var thumbSize = localStorage.getItem('thumbSize');
-        if(!thumbSize){
-            thumbSize = thumbSizes[0];
-            localStorage.setItem('thumbSize', thumbSize);
-        }
-        if(thumbSize != thumbSizes[0]){
-            $("#thumbSize option[value='" + thumbSize + "']").prop('selected', true);
-        }
-        $('#thumbSize').change(function(){
-            var ts =  $("#thumbSize").val();
-            localStorage.setItem('thumbSize', ts);
-            drawThumbs();
-        });
+    choices.sort(function (a, b) { return a - b; });
+    var html = "<select id='thumbSize'>";
+    for (i = 0; i < choices.length; i++) {
+        html += "<option value='" + choices[i] + "'>" + choices[i] + " pixels</option>";
     }
+    html += "</select>";
+    $('#thumbSizeSelector').append(html);
+    var thumbSize = localStorage.getItem('thumbSize');
+    if(!thumbSize){
+        thumbSize = choices[0];
+        localStorage.setItem('thumbSize', thumbSize);
+    }
+    if (thumbSize !== choices[0]) {
+        $("#thumbSize option[value='" + thumbSize + "']").prop('selected', true);
+    }
+    $('#thumbSize').change(function(){
+        var ts =  $("#thumbSize").val();
+        localStorage.setItem('thumbSize', ts);
+        drawThumbs();
+    });
 }
 
 function markSelection() {
@@ -481,6 +481,7 @@ function getThumb(canvas, preferredSize){
     };
 }
 
+// can retire this function
 function getParticularSizeThumb(canvas, thumbSize) {
     var sizes = canvas.thumbnail.service.sizes;
     sizes.sort(function (a, b) { return a.width - b.width; });
@@ -496,6 +497,7 @@ function getParticularSizeThumb(canvas, thumbSize) {
     return null;
 }
 
+// can retire this function?
 function getMinimumSizeThumb(canvas, thumbSize) {
     var sizes = canvas.thumbnail.service.sizes;
     sizes.sort(function (a, b) { return a.width - b.width; });
