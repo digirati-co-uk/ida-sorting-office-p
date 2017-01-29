@@ -87,6 +87,12 @@ namespace IdaSortingOffice.Controllers
             }
 
             Response.Headers["Access-Control-Allow-Origin"] = "*";
+            if (op.HttpMethod == "OPTIONS")
+            {
+                Response.Headers["Access-Control-Allow-Methods"] = "POST, PUT, GET, OPTIONS";
+                Response.Headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type";
+                return new EmptyResult();
+            }
 
             if (op.Name == "Collection")
             {
