@@ -6,7 +6,10 @@ var authDo;
 var assumeFullMax = false;
 var startCanvas = null;
 var endCanvas = null;
-var ranges = null;
+var derivedManifests = null;
+
+// var presentationServer = "https://presley.com/"
+var presentationServer = location.protocol + '//' + location.host;
 
 var pop="";
 pop += "<div class=\"modal fade\" id=\"imgModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mdlLabel\">";
@@ -56,6 +59,23 @@ rv += "    <hr \/>";
 rv += "    <p>Thumbnail viewer<\/p>";
 rv += "<\/footer>";
 
+var manifestTemplate = {
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "to be replaced",
+    "@type": "sc:Manifest",
+    "label": "to be replaced",
+    "service": {
+        "profile": "https://dlcs.info/profiles/mintrequest"
+    },
+    "sequences": [
+      {
+          "@id": "to be replaced",
+          "@type": "sc:Sequence",
+          "label": "Default sequence",
+          "canvases": []
+      }
+    ]
+}
 
 $(function() {
     $("#mainContainer").append(rv);
@@ -88,19 +108,35 @@ $(function() {
             alert("invalid selection");
             return;
         }
-        var range = {
-            manifestId: loadedResource,
-            startCanvas: startCanvas,
-            endCanvas: endCanvas
-        };
+        var newManifest = $.extend(true, {}, manifestTemplate);
+        IIIF.wrap(newManifest);
+        var manifestName = "cvs-" + s + "-" + e;
+        newManifest.id = getManifestUrlForLoadedResource(manifestName);
+        newManifest.label = getManifestLabel(s, e);
+        newManifest.sequences[0].id = newManifest.id.replace("/manifest", "/sequence/s0");
+        for (var cvsIdx = s; cvsIdx <= e; cvsIdx++) {
+            newManifest.sequences[0].canvases.push(canvasList[cvsIdx]);
+        }
         $.ajax({
-            url: '/SaveRange',
-            type: 'POST',
+            url: newManifest.id,
+            type: 'PUT',
             contentType: 'application/json',
-            data: JSON.stringify(range),
+            data: JSON.stringify(newManifest),
             dataType: 'json'
-        }).done(function (data, textStatus, xhr) {
-            loadManifestPage(data.RangeManifestId);
+        }).done(function () {
+            newManifest.sequences = null;
+            newManifest.service = null;
+            $.ajax({
+                url: getCollectionUrlForLoadedResource(),
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(newManifest),
+                dataType: 'json'
+            }).done(function () {
+                loadManifestPage(newManifest.id);
+            }).fail(function (xhr, textStatus, error) {
+                alert(error);
+            });
         }).fail(function(xhr, textStatus, error) {
             alert(error);
         });
@@ -143,6 +179,7 @@ function processQueryString(){
 
 
 function load(manifest) {
+    IIIF.wrap(manifest);
     getCreatedManifests();
     var thumbs = $('#thumbs');
     thumbs.empty();
@@ -158,30 +195,86 @@ function load(manifest) {
     $('#manifestWait').hide();
 }
 
-function getCreatedManifests() {
-    $.getJSON("/home/ranges?id=" + loadedResource, function (manifests) {
-        ranges = manifests;
-        $("#manifestSelector").append("<option value=\"" + loadedResource + "\">Original manifest</option>");
-        for (var i = 0; i < manifests.length; i++) {
-            $("#manifestSelector").append("<option value=\"" + manifests[i].RangeManifestId + "\">" + manifests[i].Id + "</option>");
-        }
-        $("#manifestSelector").change(function() {
-            for (var r = 0; r < ranges.length; r++) {
-                if (ranges[r].RangeManifestId === $(this).val()) {
-                    startCanvas = ranges[r].StartCanvas;
-                    endCanvas = ranges[r].EndCanvas;
-                    var start = markSelection();
-                    start.scrollIntoView();
-                    break;
-                }
-            }
-        });
-        $("#viewManifest").click(function() {
-            loadManifestPage($("#manifestSelector").val());
-        });
-    });
+function getManifestLabel(start, end) {
+    return getPath(loadedResource).replace(/\//g, " ") + "canvases " + start + "-" + end;
 }
 
+function getCollectionUrlForLoadedResource() {
+    return presentationServer + "/presley/ida/collection/" + getUriComponent(loadedResource);
+}
+
+function getManifestUrlForLoadedResource(manifestName) {
+    var identifier = getUriComponent(loadedResource) + manifestName;
+    return presentationServer + "/presley/ida/" + identifier + "/manifest";
+}
+
+function getPath(url) {
+    var reg = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
+    return reg.exec(url)[1];
+}
+
+function getUriComponent(str) {
+    // for demo purposes! Not safe for general URL patterns
+    return getPath(str).replace(/\//g, "_");
+}
+
+function getCreatedManifests() {
+    // run on page load
+    $("#manifestSelector").append("<option value=\"" + loadedResource + "\">Original manifest</option>");
+    var collectionId = getCollectionUrlForLoadedResource(); // get the container in presley
+    console.log("attemp to load " + collectionId);
+    $.getJSON(collectionId)
+        .done(function (collection) {
+            IIIF.wrap(collection);
+            derivedManifests = collection;
+            if (derivedManifests && derivedManifests.members) {
+                for (var i = 0; i < derivedManifests.members.length; i++) {
+                    var manifest = derivedManifests.members[i];
+                    var label = manifest.label || manifest.id;
+                    $("#manifestSelector").append("<option value=\"" + manifest.id + "\">" + label + "</option>");
+                }
+            }
+            $("#manifestSelector").change(selectDerivedManifest);
+            $("#viewManifest").click(function () {
+                loadManifestPage($("#manifestSelector").val());
+            });
+
+
+
+        })
+        .fail(function () {
+            console.log("no load " + collectionId);
+            derivedManifests = null;
+        });
+}
+
+function selectDerivedManifest() {
+    for (var r = 0; r < derivedManifests.members.length; r++) {
+        var manifestId = derivedManifests.members[r].id;
+        if (manifestId === $(this).val()) {
+            // load this manifest
+            $.getJSON(manifestId).done(function (fullManifest) {
+                var derivedCanvasList = fullManifest.sequences[0].canvases;
+                startCanvas = derivedCanvasList[0]["@id"];                
+                endCanvas = derivedCanvasList[derivedCanvasList.length - 1]["@id"];
+                if (fullManifest.service) {
+                    if (!Array.isArray(fullManifest.service)) {
+                        fullManifest.service = [fullManifest.service];
+                    }
+                    fullManifest.service.forEach(function (svc) {
+                        if (svc.profile && svc.profile == "https://dlcs.info/profiles/canvasmap") {
+                            startCanvas = svc.canvasmap[startCanvas] || startCanvas;
+                            endCanvas = svc.canvasmap[endCanvas] || endCanvas;
+                        }
+                    });
+                }
+                var start = markSelection();
+                start.scrollIntoView();
+            });
+            break;
+        }
+    }
+}
 var thumbImageTemplate = "<img class=\"thumb\" title=\"{label}\" data-uri=\"{canvasId}\" data-src=\"{dataSrc}\" {dimensions} />";
 
 function drawThumbs(){
@@ -194,7 +287,7 @@ function drawThumbs(){
         var additionalHtml = "";
         var confBar = "<div class=\"confBarPlaceholder\"></div>";
         var imgLabel = "";
-        if (canvas.service && canvas.service["@context"] === "https://dlcs-ida.org/ocr-info") {
+        if (canvas.service && canvas.service.context === "https://dlcs-ida.org/ocr-info") {
             var isType = canvas.service["Typescript"];
             divclass = isType ? "ocrType" : "ocrHand";
             if (isType) {
@@ -219,11 +312,13 @@ function drawThumbs(){
             }
         }
         var thumbHtml = '<div class="tc ' + divclass + '"><div class=\"cvLabel\">' + (canvas.label || '') + '</div>';
-        var thumb = getThumb(canvas, preferredSize);
+        var min = preferredSize < 100 ? 0 : Math.round(preferredSize * 0.8);
+        var max = preferredSize < 100 ? 200 : preferredSize * 2;
+        var thumb = canvas.getThumbnail(preferredSize, min, max); //getThumb(canvas, preferredSize);
         if(!thumb){ 
             thumbHtml += '<div class="thumb-no-access">Image not available</div></div>';
         } else {
-            var thumbImg = thumbImageTemplate.replace("{label}", imgLabel).replace("{canvasId}", canvas["@id"]).replace("{dataSrc}", thumb.url);
+            var thumbImg = thumbImageTemplate.replace("{label}", imgLabel).replace("{canvasId}", canvas.id).replace("{dataSrc}", thumb.url);
             var dimensions = "";
             if (thumb.width && thumb.height) {
                 dimensions = "width=\"" + thumb.width + "\" height=\"" + thumb.height + "\"";
@@ -239,42 +334,48 @@ function drawThumbs(){
     $("img.thumb").unveil(300);
 }
 
-function makeThumbSizeSelector(){
-    thumbSizes = [];
-    for(var i=0; i<Math.min(canvasList.length, 10); i++){
+function makeThumbSizeSelector() {
+    var choices = [30, 50, 100, 200, 400, 600];
+    var foundSizes = [];
+    var i;
+    for(i = 0; i<Math.min(canvasList.length, 10); i++){
         var canvas = canvasList[i];
         if(canvas.thumbnail && canvas.thumbnail.service && canvas.thumbnail.service.sizes){
             var sizes = canvas.thumbnail.service.sizes;
             for(var j=0; j<sizes.length;j++){
                 var testSize = Math.max(sizes[j].width, sizes[j].height);
-                if(thumbSizes.indexOf(testSize) == -1 && testSize <= 600){
-                    thumbSizes.push(testSize);
+                foundSizes.push(testSize);
+                if (choices.indexOf(testSize) === -1 && testSize <= 600) {
+                    choices.push(testSize);
                 }
             }    
         }
     }
-    thumbSizes.sort(function(a, b) { return a - b; });
-    if(thumbSizes.length > 1){
-        var html = "<select id='thumbSize'>";
-        for(var i=0; i< thumbSizes.length; i++){
-            html += "<option value='" + thumbSizes[i] + "'>" + thumbSizes[i] + " pixels</option>";
+    choices.sort(function (a, b) { return a - b; });
+    var html = "<select id='thumbSize'>";
+    for (i = 0; i < choices.length; i++) {
+        var box = choices[i];
+        var label = box;
+        if (foundSizes.indexOf(box) !== -1) {
+            label += "*";
         }
-        html += "</select>";
-        $('#thumbSizeSelector').append(html);
-        var thumbSize = localStorage.getItem('thumbSize');
-        if(!thumbSize){
-            thumbSize = thumbSizes[0];
-            localStorage.setItem('thumbSize', thumbSize);
-        }
-        if(thumbSize != thumbSizes[0]){
-            $("#thumbSize option[value='" + thumbSize + "']").prop('selected', true);
-        }
-        $('#thumbSize').change(function(){
-            var ts =  $("#thumbSize").val();
-            localStorage.setItem('thumbSize', ts);
-            drawThumbs();
-        });
+        html += "<option value='" + box + "'>" + label + " pixels</option>";
     }
+    html += "</select>";
+    $('#thumbSizeSelector').append(html);
+    var thumbSize = localStorage.getItem('thumbSize');
+    if(!thumbSize){
+        thumbSize = choices[0];
+        localStorage.setItem('thumbSize', thumbSize);
+    }
+    if (thumbSize !== choices[0]) {
+        $("#thumbSize option[value='" + thumbSize + "']").prop('selected', true);
+    }
+    $('#thumbSize').change(function(){
+        var ts =  $("#thumbSize").val();
+        localStorage.setItem('thumbSize', ts);
+        drawThumbs();
+    });
 }
 
 function markSelection() {
@@ -310,26 +411,26 @@ function selectForModal(canvasId, $image) {
     $('img.thumb').css('border', '2px solid white');
     $image.css('border', '2px solid tomato');
     var cvIdx = findCanvasIndex(canvasId);
-    if(cvIdx != -1){
+    if(cvIdx !== -1){
         var canvas = canvasList[cvIdx];
-        var imgToLoad = getMainImg(canvas);
+        var imgToLoad = canvas.getThumbnail(1000, 800, 2000); // getMainImg(canvas);
         bigImage.show();
-        bigImage.attr("src", imgToLoad); // may fail if auth
-        bigImage.attr("data-src", imgToLoad); // to preserve
-        bigImage.attr("data-uri", getImageService(canvas));
+        bigImage.attr("src", imgToLoad.url); // may fail if auth
+        bigImage.attr("data-src", imgToLoad.url); // to preserve
+        bigImage.attr("data-uri", canvas.getDefaultImageService().id);
         $(".btn-mark").attr("data-uri", canvasId);
         $('#mdlLabel').text(canvas.label);
         if(cvIdx > 0){
             $('#mdlPrev').prop('disabled', false);
-            prevCanvas = canvasList[cvIdx - 1];
-            $('#mdlPrev').attr('data-uri', prevCanvas['@id']);
+            var prevCanvas = canvasList[cvIdx - 1];
+            $('#mdlPrev').attr('data-uri', prevCanvas.id);
         } else {
             $('#mdlPrev').prop('disabled', true);
         }        
         if(cvIdx < canvasList.length - 1){
             $('#mdlNext').prop('disabled', false);
-            nextCanvas = canvasList[cvIdx + 1];
-            $('#mdlNext').attr('data-uri', nextCanvas['@id']);
+            var nextCanvas = canvasList[cvIdx + 1];
+            $('#mdlNext').attr('data-uri', nextCanvas.id);
         } else {
             $('#mdlNext').prop('disabled', true);
         }
@@ -345,80 +446,10 @@ function findCanvasIndex(canvasId){
     return -1;
 }
 
-function getMainImg(canvas){
-    var bigThumb = getMinimumSizeThumb(canvas, 1000);
-    if (bigThumb) {
-        return canvas.thumbnail.service['@id'] + "/full/max/0/default.jpg";
-    } else {
-        return canvas.images[0].resource['@id'];
-    }
-}
-
-function getImageService(canvas){
-    var services = canvas.images[0].resource.service;
-    var imgService = services;
-    if(Array.isArray(services)){
-        for(var i=0; i<services.length; i++){
-            if(typeof services[i] === "object" && services[i].profile && services[i].profile.indexOf('http://iiif.io/api/image') != -1){
-                imgService = services[i];
-                break;
-            }
-        }
-    }
-    return imgService["@id"];
-}
-
-function getThumb(canvas, preferredSize){
-    if(!canvas.thumbnail){
-        return null;
-    }
-    if (typeof canvas.thumbnail === "string") {
-        return {
-            url: canvas.thumbnail
-        };
-    }
-    if(canvas.thumbnail.service && canvas.thumbnail.service.sizes){
-        // manifest gives thumb size hints
-        // dumb version exact match and assumes ascending - TODO: https://gist.github.com/tomcrane/093c6281d74b3bc8f59d
-        var particular = getParticularSizeThumb(canvas, preferredSize);
-        if(particular) return particular;
-    }
-    return {
-        url: canvas.thumbnail["@id"]
-    };
-}
-
-function getParticularSizeThumb(canvas, thumbSize) {
-    var sizes = canvas.thumbnail.service.sizes;
-    sizes.sort(function (a, b) { return a.width - b.width; });
-    for (var i = sizes.length - 1; i >= 0; i--) {
-        if ((sizes[i].width === thumbSize || sizes[i].height === thumbSize) && sizes[i].width <= thumbSize && sizes[i].height <= thumbSize) {
-            return {
-                url: canvas.thumbnail.service["@id"] + "/full/" + sizes[i].width + "," + sizes[i].height + "/0/default.jpg",
-                width: sizes[i].width,
-                height: sizes[i].height
-            };
-        }
-    }
-    return null;
-}
-
-function getMinimumSizeThumb(canvas, thumbSize) {
-    var sizes = canvas.thumbnail.service.sizes;
-    sizes.sort(function (a, b) { return a.width - b.width; });
-    for (var i = 0; i < sizes.length; i++) {
-        if (Math.max(sizes[i].width, sizes[i].height) >= thumbSize) {
-            return canvas.thumbnail.service['@id'] + "/full/" + sizes[i].width + "," + sizes[i].height + "/0/default.jpg";
-        }
-    }
-    return null;
-}
-
 function attemptAuth(imageService){
     imageService += "/info.json";
     doInfoAjax(imageService, on_info_complete);
 }
-
 
 function doInfoAjax(uri, callback, token) {
     var opts = {};
@@ -436,26 +467,17 @@ function reloadImage(){
     bigImage.attr('src', bigImage.attr('data-src') + "#" + new Date().getTime());
 }
 
-function on_info_complete(jqXHR, textStatus) {
+function on_info_complete(jqXHR) {
 
     var infoJson = $.parseJSON(jqXHR.responseText);
-    var services = getServices(infoJson);
-    // leave out degraded for Wellcome for now
+    var services = IIIF.getAuthServices(infoJson);
 
-    if (jqXHR.status == 200) {
-        // with the very simple clickthrough we shouldn't get back here unless there's a non-auth issue (eg 404, 500)
-        // when this is reintroduced, need to handle the error on image - if it's not because of auth then reloading the image, 404, infinite loop.
-
-        // reloadImage();
-        // if (services.login && services.login.logout) {
-        //     authDo.attr('data-login-or-out', services.login.logout.id);
-        //     authDo.attr('data-token', services.login.token.id);
-        //     changeAuthAction(services.login.logout.label);
-        // }
+    if (jqXHR.status === 200) {
+        // TODO - degraded, other auth modes.
         return;
     }
 
-    if (jqXHR.status == 403) {
+    if (jqXHR.status === 403) {
         alert('TODO... 403');
         return;
     }
@@ -492,50 +514,6 @@ function doClickthroughViaWindow(ev) {
             }
         }
     }, 500);
-}
-
-function getServices(info) {
-    var svcInfo = {};
-    var services;
-    console.log("Looking for auth services");
-    if (info.hasOwnProperty('service')) {
-        if (info.service.hasOwnProperty('@context')) {
-            services = [info.service];
-        } else {
-            // array of service
-            services = info.service;
-        }
-        var prefix = 'http://iiif.io/api/auth/0/';
-        var clickThrough = 'http://iiif.io/api/auth/0/login/clickthrough';
-        for (var service, i = 0; (service = services[i]) ; i++) {
-            var serviceName;
-
-            if (service['profile'] == clickThrough) {
-                serviceName = 'clickthrough';
-                console.log("Found click through service");
-                svcInfo[serviceName] = {
-                    id: service['@id'],
-                    label: service.label,
-                    description: service.description,
-                    confirmLabel: "Accept terms and Open" // fake this for now
-                };
-            }
-            else if (service['profile'].indexOf(prefix) === 0) {
-                serviceName = service['profile'].slice(prefix.length);
-                console.log("Found " + serviceName + " auth service");
-                svcInfo[serviceName] = { id: service['@id'], label: service.label };
-
-            }
-            if (service.service && serviceName) {
-                for (var service2, j = 0; (service2 = service.service[j]) ; j++) {
-                    var nestedServiceName = service2['profile'].slice(prefix.length);
-                    console.log("Found nested " + nestedServiceName + " auth service");
-                    svcInfo[serviceName][nestedServiceName] = { id: service2['@id'], label: service2.label };
-                }
-            }
-        }
-    }
-    return svcInfo;
 }
 
 /**

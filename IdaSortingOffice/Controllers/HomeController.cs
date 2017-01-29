@@ -14,7 +14,7 @@ using Newtonsoft.Json.Linq;
 
 namespace IdaSortingOffice.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         protected class SiteCredentials
         {
@@ -122,12 +122,6 @@ namespace IdaSortingOffice.Controllers
             };
         }
 
-        private JObject GetManifestTemplate()
-        {
-            var templateFile = HttpContext.Server.MapPath("~/App_Data/manifest-template.json");
-            var json = System.IO.File.ReadAllText(templateFile);
-            return JObject.Parse(json);
-        }
 
         private DirectoryInfo GetDirectoryForRanges(string manifestId)
         {

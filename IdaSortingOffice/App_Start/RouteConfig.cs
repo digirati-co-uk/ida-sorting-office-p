@@ -19,6 +19,13 @@ namespace IdaSortingOffice
                 url: "roll/{*pathInfo}",
                 defaults: new { controller = "Home", action = "Roll" }
             );
+            
+            routes.MapRoute(
+                name: "Presley",
+                url: "presley/ida/{*pathInfo}", // presley/ida/<container>/<manifest>
+                defaults: new { controller = "Presley", action = "PresleyOp" }
+            );
+
             routes.MapRoute(
                 name: "Manifest",
                 url: "manifest/{*pathInfo}",

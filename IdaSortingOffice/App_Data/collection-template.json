@@ -1,0 +1,12 @@
+﻿{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "to be replaced",
+  "@type": "sc:Collection",
+  "members": [
+    {
+      "@id": "to be replaced",
+      "@type": "sc:Manifest",
+      "label": "Example manifest"
+    }
+  ]
+}
