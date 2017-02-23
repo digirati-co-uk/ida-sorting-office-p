@@ -32,6 +32,37 @@ namespace IdaSortingOffice.Controllers
             return View(GetCachedRolls());
         }
 
+        public ActionResult RollCollection()
+        {
+            SetManifestHeaders();
+            var collection = GetCollectionTemplate();
+            collection["@id"] = Request.Url.AbsoluteUri;
+            var tableService = new JObject
+            {
+                ["profile"] = "table-profile-here",
+                ["headers"] = new JArray("Id", "Title", "Dates", "Number", "State", "PubNo", "Notes")
+            };
+            collection["service"] = tableService;
+            var rolls = GetCachedRolls();
+            var members = new JArray();
+            foreach (var roll in rolls)
+            {
+                var member = GetSimpleManifestTemplate();
+                member["@id"] = Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/" + roll.Id;
+                var rowService = new JObject
+                {
+                    ["profile"] = "row-profile-here",
+                    ["values"] = new JArray(roll.Id, roll.Title, roll.Dates, roll.Number, roll.State, roll.PubNo, roll.Notes),
+                    ["highlight"] = roll.OcrData == null ? "" : "info"
+                };
+                member["service"] = rowService;
+                member["label"] = $"{roll.Title}, {roll.Dates} | {roll.Number} {roll.State} | {roll.PubNo}";
+                members.Add(member);
+            }
+            collection["members"] = members;
+            return Content(collection.ToString(Formatting.Indented), "application/json");
+        }
+
         [Authorize]
         public ActionResult SortingOffice()
         {
