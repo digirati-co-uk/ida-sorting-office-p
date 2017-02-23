@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Configuration;
 using System.IO;
 using System.Linq;
@@ -44,11 +45,13 @@ namespace IdaSortingOffice.Controllers
             };
             collection["service"] = tableService;
             var rolls = GetCachedRolls();
-            var members = new JArray();
+            var prefix = Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/";
+            var orderedRolls = new JObject[rolls.Count];
+            int index = 5;
             foreach (var roll in rolls)
             {
                 var member = GetSimpleManifestTemplate();
-                member["@id"] = Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/" + roll.Id;
+                member["@id"] = prefix + roll.Id;
                 var rowService = new JObject
                 {
                     ["profile"] = "row-profile-here",
@@ -57,7 +60,32 @@ namespace IdaSortingOffice.Controllers
                 };
                 member["service"] = rowService;
                 member["label"] = $"{roll.Title}, {roll.Dates} | {roll.Number} {roll.State} | {roll.PubNo}";
-                members.Add(member);
+                switch (roll.Id)
+                {
+                    case "M-1011/127/":
+                        orderedRolls[0] = member;
+                        break;
+                    case "M-1473/24/":
+                        orderedRolls[1] = member;
+                        break;
+                    case "T-21/02/":
+                        orderedRolls[2] = member;
+                        break;
+                    case "M-941/03/":
+                        orderedRolls[3] = member;
+                        break;
+                    case "M-1304/25/":
+                        orderedRolls[4] = member;
+                        break;
+                    default:
+                        orderedRolls[index++] = member;
+                        break;
+                }
+            }
+            var members = new JArray();
+            foreach (JObject roll in orderedRolls)
+            {
+                members.Add(roll);
             }
             collection["members"] = members;
             return Content(collection.ToString(Formatting.Indented), "application/json");
@@ -222,6 +250,7 @@ namespace IdaSortingOffice.Controllers
 
             var manifestId = Request.Url.AbsoluteUri;
             manifest["@id"] = manifestId;
+            manifest["sequences"][0]["@id"] = manifestId + "sequence";
             manifest["metadata"][0]["value"] = string.Format(
                 "{0} {1} {2} {3}", roll.Title, roll.Dates, roll.State, roll.PubNo);
             var canvases = manifest["sequences"][0]["canvases"];
