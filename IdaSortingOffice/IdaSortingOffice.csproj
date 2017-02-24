@@ -155,6 +155,9 @@
     <Content Include="Content\Site.css" />
     <None Include="http.md" />
     <Content Include="script\iiif.js" />
+    <Content Include="sorting-room\assets\css\styles.css" />
+    <Content Include="sorting-room\assets\js\script.js" />
+    <Content Include="sorting-room\index.html" />
     <Content Include="sortingoffice.html" />
     <Content Include="script\bootstrap.min.js" />
     <Content Include="script\thumbs.js" />

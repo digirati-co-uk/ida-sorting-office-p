@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Configuration;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,64 @@ namespace IdaSortingOffice.Controllers
         public ActionResult Index()
         {
             return View(GetCachedRolls());
+        }
+
+        public ActionResult RollCollection()
+        {
+            SetManifestHeaders();
+            var collection = GetCollectionTemplate();
+            collection["@id"] = Request.Url.AbsoluteUri;
+            var tableService = new JObject
+            {
+                ["profile"] = "table-profile-here",
+                ["headers"] = new JArray("Id", "Title", "Dates", "Number", "State", "PubNo", "Notes")
+            };
+            collection["service"] = tableService;
+            var rolls = GetCachedRolls();
+            var prefix = Request.Url.GetLeftPart(UriPartial.Authority) + "/roll/";
+            var orderedRolls = new JObject[rolls.Count];
+            int index = 5;
+            foreach (var roll in rolls)
+            {
+                var member = GetSimpleManifestTemplate();
+                member["@id"] = prefix + roll.Id;
+                var rowService = new JObject
+                {
+                    ["profile"] = "row-profile-here",
+                    ["values"] = new JArray(roll.Id, roll.Title, roll.Dates, roll.Number, roll.State, roll.PubNo, roll.Notes),
+                    ["highlight"] = roll.OcrData == null ? "" : "info"
+                };
+                member["service"] = rowService;
+                member["label"] = $"{roll.Title}, {roll.Dates} | {roll.Number} {roll.State} | {roll.PubNo}";
+                switch (roll.Id)
+                {
+                    case "M-1011/127/":
+                        orderedRolls[0] = member;
+                        break;
+                    case "M-1473/24/":
+                        orderedRolls[1] = member;
+                        break;
+                    case "T-21/02/":
+                        orderedRolls[2] = member;
+                        break;
+                    case "M-941/03/":
+                        orderedRolls[3] = member;
+                        break;
+                    case "M-1304/25/":
+                        orderedRolls[4] = member;
+                        break;
+                    default:
+                        orderedRolls[index++] = member;
+                        break;
+                }
+            }
+            var members = new JArray();
+            foreach (JObject roll in orderedRolls)
+            {
+                members.Add(roll);
+            }
+            collection["members"] = members;
+            return Content(collection.ToString(Formatting.Indented), "application/json");
         }
 
         [Authorize]
@@ -191,6 +250,7 @@ namespace IdaSortingOffice.Controllers
 
             var manifestId = Request.Url.AbsoluteUri;
             manifest["@id"] = manifestId;
+            manifest["sequences"][0]["@id"] = manifestId + "sequence";
             manifest["metadata"][0]["value"] = string.Format(
                 "{0} {1} {2} {3}", roll.Title, roll.Dates, roll.State, roll.PubNo);
             var canvases = manifest["sequences"][0]["canvases"];

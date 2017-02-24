@@ -15,6 +15,11 @@ namespace IdaSortingOffice
                 defaults: new { controller = "Home", action = "SortingOffice" }
             );
             routes.MapRoute(
+                name: "RollCollection",
+                url: "rollcollection",
+                defaults: new { controller = "Home", action = "RollCollection" }
+            );
+            routes.MapRoute(
                 name: "Roll",
                 url: "roll/{*pathInfo}",
                 defaults: new { controller = "Home", action = "Roll" }
