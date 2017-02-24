@@ -85,7 +85,11 @@ namespace IdaSortingOffice.Controllers
             var members = new JArray();
             foreach (JObject roll in orderedRolls)
             {
-                members.Add(roll);
+                if(roll != null)
+                {
+                    // TODO - if there were dupes in rolls, there will be fewer in orderedRolls than rolls.
+                    members.Add(roll);
+                }
             }
             collection["members"] = members;
             return Content(collection.ToString(Formatting.Indented), "application/json");
